@@ -1,0 +1,445 @@
+{
+	id: "25D873558506B025"
+	group: ""
+	order_index: 1
+	filename: "psi"
+	title: "Psi"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Пси пыль"
+			x: -1.5d
+			y: -0.5d
+			description: ["Просто киньте на землю Красную пыль и выстрелете в неё с помощью обычно железного пистолета"]
+			dependencies: ["072C051E4473BBFD"]
+			id: "5159679AD308155A"
+			tasks: [{
+				id: "7598DD413D680157"
+				type: "item"
+				item: "psi:psidust"
+				count: 10L
+			}]
+			rewards: [{
+				id: "4AFD13E1DC32EF4C"
+				type: "item"
+				item: "farmersdelight:roasted_mutton_chops"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -0.5d
+			shape: "gear"
+			description: ["Нужен для улучшения магического пистолета"]
+			dependencies: ["2709995071D18A11"]
+			id: "072C051E4473BBFD"
+			tasks: [{
+				id: "47202E623DAD45E6"
+				type: "item"
+				item: "psi:cad_assembler"
+			}]
+			rewards: [{
+				id: "3BF6849FA95F897D"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Первые улучшения!"
+			x: 0.0d
+			y: -0.5d
+			description: ["Улучшите свой пистолет"]
+			dependencies: ["072C051E4473BBFD"]
+			id: "6B8E9F4A316DF421"
+			tasks: [
+				{
+					id: "2465567184E2BFB8"
+					type: "item"
+					item: "psi:cad_core_basic"
+				}
+				{
+					id: "6E51DB8A645FA111"
+					type: "item"
+					item: "psi:cad_socket_basic"
+				}
+				{
+					id: "21D787C804B0257B"
+					type: "item"
+					item: "psi:cad_battery_basic"
+				}
+			]
+		}
+		{
+			title: "2 уровень улучшений"
+			x: 5.0d
+			y: 0.5d
+			dependencies: ["29BB0220054AA594"]
+			id: "27842E2F2574EE16"
+			tasks: [
+				{
+					id: "479461616F4E3393"
+					type: "item"
+					item: "psi:cad_core_overclocked"
+				}
+				{
+					id: "3C52D4152D0A9BB0"
+					type: "item"
+					item: "psi:cad_socket_signaling"
+				}
+				{
+					id: "44DAFB102C246870"
+					type: "item"
+					item: "psi:cad_battery_extended"
+				}
+			]
+			rewards: [{
+				id: "012082376E940F5C"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Достаточно мощный пистолет"
+			x: 6.5d
+			y: 1.5d
+			dependencies: ["27842E2F2574EE16"]
+			id: "0643504196C7AD85"
+			tasks: [{
+				id: "6287A63752615A84"
+				type: "item"
+				item: "psi:cad_assembly_psimetal"
+			}]
+			rewards: [{
+				id: "172257ECE16C3C5B"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "3 уровень улучшений"
+			x: 8.5d
+			y: 1.5d
+			dependencies: ["0643504196C7AD85"]
+			id: "0F99A4BFEEA91A10"
+			tasks: [
+				{
+					id: "675B7DAEF3821641"
+					type: "item"
+					item: "psi:cad_core_conductive"
+				}
+				{
+					id: "771B75015D324ED7"
+					type: "item"
+					item: "psi:cad_socket_large"
+				}
+				{
+					id: "0CAB8E0F5F0FDBD0"
+					type: "item"
+					item: "psi:cad_battery_ultradense"
+				}
+			]
+			rewards: [{
+				id: "77D235D003A34BBE"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Интересно всё же делать тут новые слитки"
+			x: 7.5d
+			y: 0.0d
+			dependencies: [
+				"0643504196C7AD85"
+				"0F99A4BFEEA91A10"
+			]
+			id: "5ABDC7E2CA8C1CCD"
+			tasks: [{
+				id: "3F892B085CDA02C8"
+				type: "item"
+				item: "psi:ivory_psimetal"
+				count: 16L
+			}]
+			rewards: [{
+				id: "21E8C544766031FD"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Белый очень мощный пистолет"
+			x: 7.5d
+			y: -1.5d
+			dependencies: ["5ABDC7E2CA8C1CCD"]
+			id: "77342857B4F8F62E"
+			tasks: [{
+				id: "60FABB7012690B9F"
+				type: "item"
+				item: "psi:cad_assembly_ivory_psimetal"
+			}]
+			rewards: [{
+				id: "069206F5548C92B2"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "4 уровень улучшений"
+			x: 7.5d
+			y: -3.0d
+			dependencies: ["77342857B4F8F62E"]
+			id: "4A4153B842114A71"
+			tasks: [
+				{
+					id: "683F982358254F32"
+					type: "item"
+					item: "psi:cad_core_hyperclocked"
+				}
+				{
+					id: "369705B51D1D4230"
+					type: "item"
+					item: "psi:cad_socket_transmissive"
+				}
+				{
+					id: "1A9C28DA5050E66E"
+					type: "item"
+					item: "psi:cad_battery_ultradense"
+				}
+			]
+			rewards: [{
+				id: "54CA14BE531FBDFD"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Новый пистолет"
+			x: 3.5d
+			y: 0.5d
+			dependencies: ["248E1A4FA57F9B39"]
+			id: "29BB0220054AA594"
+			tasks: [{
+				id: "087AA0028A4B50FA"
+				type: "item"
+				item: "psi:cad_assembly_gold"
+			}]
+			rewards: [{
+				id: "30ECE26368F63F63"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Красивые"
+			x: 6.0d
+			y: -4.5d
+			dependencies: ["4A4153B842114A71"]
+			id: "452AE3D57B9D99AD"
+			tasks: [{
+				id: "3829297F9CC713B6"
+				type: "item"
+				item: "psi:ebony_psimetal"
+				count: 24L
+			}]
+			rewards: [{
+				id: "058921B622A62CAD"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Чёрный очень мощный пистолет"
+			x: 4.5d
+			y: -4.5d
+			dependencies: ["452AE3D57B9D99AD"]
+			id: "4DEA037F3F9F3C2E"
+			tasks: [{
+				id: "0442A724A05F4F65"
+				type: "item"
+				item: "psi:cad_assembly_ebony_psimetal"
+			}]
+			rewards: [{
+				id: "4B2A5FB6A45BBA73"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "5 уровень улучшений"
+			x: 3.0d
+			y: -4.5d
+			dependencies: ["4DEA037F3F9F3C2E"]
+			id: "437C3EEEAB937164"
+			tasks: [
+				{
+					id: "758CFA106F97E88F"
+					type: "item"
+					item: "psi:cad_core_radiative"
+				}
+				{
+					id: "2DBAB32358BA7ABD"
+					type: "item"
+					item: "psi:cad_socket_huge"
+				}
+				{
+					id: "4A8DCF0646C87103"
+					type: "item"
+					item: "psi:cad_battery_ultradense"
+				}
+			]
+			rewards: [{
+				id: "09E9F38FFA3A0853"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+		}
+		{
+			title: "Программирование заклинаний?"
+			x: 1.5d
+			y: -2.0d
+			description: ["Очень интересная вещь. С её помощью можно программировать свои заклинания. Здесь можно сделать всё что ты хочешь!"]
+			dependencies: ["6B8E9F4A316DF421"]
+			id: "0CECECEF94B47214"
+			tasks: [{
+				id: "520D1ACA640C1944"
+				type: "item"
+				item: "psi:programmer"
+			}]
+			rewards: [{
+				id: "1A1C807BDBC9C6B3"
+				type: "item"
+				item: "psi:cad_colorizer_green"
+			}]
+		}
+		{
+			title: "Слитки были по-тяжелее..."
+			x: 1.5d
+			y: 0.5d
+			dependencies: ["6B8E9F4A316DF421"]
+			id: "248E1A4FA57F9B39"
+			tasks: [{
+				id: "2DEA9FF6906EAF3C"
+				type: "item"
+				item: "psi:psimetal"
+				count: 10L
+			}]
+			rewards: [{
+				id: "7D0C43A90C63CF70"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.5d
+			description: ["Нужен чтобы взять заклинание и вставить его в Пистолет."]
+			hide_dependency_lines: true
+			dependencies: ["0CECECEF94B47214"]
+			id: "27A9C8F5CB4B82B5"
+			tasks: [{
+				id: "5D4A64C52EA815C7"
+				type: "item"
+				item: {
+					id: "psi:spell_bullet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["0CECECEF94B47214"]
+			id: "6EE50E1449E6210E"
+			tasks: [{
+				id: "6115CEAC30B2149B"
+				type: "item"
+				item: {
+					id: "psi:spell_bullet_projectile"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["0CECECEF94B47214"]
+			id: "4679745223940A5F"
+			tasks: [{
+				id: "766C8F8BCE0BD876"
+				type: "item"
+				item: {
+					id: "psi:spell_bullet_loop"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["0CECECEF94B47214"]
+			id: "66146CE8E1A1759C"
+			tasks: [{
+				id: "1649A233391A4D8A"
+				type: "item"
+				item: {
+					id: "psi:spell_bullet_circle"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.0d
+			hide_dependency_lines: true
+			dependencies: ["0CECECEF94B47214"]
+			id: "5E5D2916390E7EFC"
+			tasks: [{
+				id: "6FAA7537FB870759"
+				type: "item"
+				item: {
+					id: "psi:spell_bullet_grenade"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.0d
+			hide_dependency_lines: true
+			dependencies: ["0CECECEF94B47214"]
+			id: "2D35868C54554199"
+			tasks: [{
+				id: "78821B6540A4DBDD"
+				type: "item"
+				item: {
+					id: "psi:spell_bullet_charge"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.0d
+			hide_dependency_lines: true
+			dependencies: ["0CECECEF94B47214"]
+			id: "1F43B9C738E3711C"
+			tasks: [{
+				id: "5D2B4703A72246C4"
+				type: "item"
+				item: {
+					id: "psi:spell_bullet_mine"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+	]
+}

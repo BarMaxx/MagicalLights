@@ -1,0 +1,724 @@
+{
+	id: "2F3DE8AFB5BB0CFA"
+	group: ""
+	order_index: 4
+	filename: "eidolon"
+	title: "Eidolon"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Это точно не помещает"
+			x: -3.0d
+			y: 0.0d
+			shape: "gear"
+			dependencies: [
+				"2F22BA1069E80801"
+				"51E186EAA74FF457"
+			]
+			id: "5015BFB31C22D755"
+			tasks: [{
+				id: "0067A79B70291733"
+				type: "item"
+				item: "eidolon:codex"
+			}]
+			rewards: [{
+				id: "038F73D23E37C5AE"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Интересно"
+			x: -4.5d
+			y: 0.0d
+			dependencies: ["2F22BA1069E80801"]
+			id: "51E186EAA74FF457"
+			tasks: [{
+				id: "1412332F0715030F"
+				type: "item"
+				item: "eidolon:pewter_ingot"
+				count: 24L
+			}]
+			rewards: [{
+				id: "0B45D93CF0A705B2"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			dependencies: ["0CFE5EA4D909CB05"]
+			id: "7C4FDBF426992910"
+			tasks: [{
+				id: "7E5CEE3B6A916C0E"
+				type: "item"
+				item: "eidolon:crucible"
+			}]
+			rewards: [{
+				id: "0FD0B5F11DD87097"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.0d
+			dependencies: ["0CFE5EA4D909CB05"]
+			id: "4D433C8D28591B85"
+			tasks: [
+				{
+					id: "340F390BF1D58349"
+					type: "item"
+					item: "eidolon:brazier"
+				}
+				{
+					id: "3E735462F1777102"
+					type: "item"
+					item: "eidolon:stone_hand"
+					count: 7L
+				}
+			]
+			rewards: [{
+				id: "4D43A89AFC963D47"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			dependencies: ["4D433C8D28591B85"]
+			id: "6969C4E3948B21C9"
+			tasks: [{
+				id: "4AFC4D142B4441D4"
+				type: "item"
+				item: "eidolon:soul_shard"
+			}]
+			rewards: [{
+				id: "607A2473655361CD"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Волшебное золото"
+			x: 5.0d
+			y: 0.0d
+			dependencies: [
+				"6969C4E3948B21C9"
+				"11355AC42A577A99"
+			]
+			id: "13D8850634CA5418"
+			tasks: [{
+				id: "09CE47CD19C69A33"
+				type: "item"
+				item: "eidolon:arcane_gold_ingot"
+				count: 5L
+			}]
+			rewards: [{
+				id: "2F33860D4544037E"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Главный предмет этого мода"
+			x: 7.0d
+			y: 0.0d
+			dependencies: ["13D8850634CA5418"]
+			id: "65D122A221167068"
+			tasks: [{
+				id: "55D8FEF1324E99B7"
+				type: "item"
+				item: "eidolon:worktable"
+			}]
+			rewards: [{
+				id: "1158F2A198A129DA"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 7.0d
+			y: 5.0d
+			dependencies: ["0A80816576081E37"]
+			id: "5146E12A226D9011"
+			tasks: [{
+				id: "33763CABDAAC774F"
+				type: "item"
+				item: "eidolon:stone_altar"
+				count: 6L
+			}]
+			rewards: [{
+				id: "11F92FE4E265FA12"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.5d
+			dependencies: ["7C4FDBF426992910"]
+			id: "1327F87B6AC0264B"
+			tasks: [{
+				id: "0999913B625F6F9F"
+				type: "item"
+				item: "eidolon:lesser_soul_gem"
+				count: 6L
+			}]
+			rewards: [{
+				id: "16C326DC434507B3"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.0d
+			dependencies: ["1327F87B6AC0264B"]
+			id: "2E681D8194A6D2B6"
+			tasks: [{
+				id: "42B00ECD2C71872F"
+				type: "item"
+				item: "eidolon:shadow_gem"
+				count: 2L
+			}]
+			rewards: [{
+				id: "6E4B325F0F8889ED"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Кровавые вещи"
+			x: 5.0d
+			y: -3.0d
+			dependencies: ["70E236132C02D63F"]
+			id: "13EE2C64671BBCF6"
+			tasks: [
+				{
+					id: "3EC8363702B0E9E9"
+					type: "item"
+					item: "eidolon:sanguine_amulet"
+				}
+				{
+					id: "67433E1FBD022751"
+					type: "item"
+					item: {
+						id: "eidolon:sapping_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0ADED3978894C8E2"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.0d
+			dependencies: ["7C4FDBF426992910"]
+			id: "11355AC42A577A99"
+			tasks: [{
+				id: "0FE0677325FB5DC8"
+				type: "item"
+				item: "eidolon:enchanted_ash"
+			}]
+			rewards: [{
+				id: "40150ED5A19B0E25"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 7.0d
+			y: 1.5d
+			dependencies: ["65D122A221167068"]
+			id: "0A80816576081E37"
+			tasks: [
+				{
+					id: "233D5731A494F7FD"
+					type: "item"
+					item: "eidolon:pewter_inlay"
+					count: 10L
+				}
+				{
+					id: "38421BD2D1F0B857"
+					type: "item"
+					item: "eidolon:gold_inlay"
+					count: 10L
+				}
+			]
+			rewards: [{
+				id: "50476922279A0CDA"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.5d
+			dependencies: ["13D8850634CA5418"]
+			id: "70E236132C02D63F"
+			tasks: [{
+				id: "34E677B734FB075F"
+				type: "item"
+				item: "eidolon:basic_amulet"
+			}]
+			rewards: [{
+				id: "10EF2191EAC6D631"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.5d
+			dependencies: ["0A80816576081E37"]
+			id: "38F4C55C3DA50DBC"
+			tasks: [{
+				id: "38A2E85F2D9B9885"
+				type: "item"
+				item: "eidolon:void_amulet"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 1.5d
+			dependencies: ["0A80816576081E37"]
+			id: "2CFECB265A69EF73"
+			tasks: [{
+				id: "34533CF0DEEEE321"
+				type: "item"
+				item: "eidolon:warded_mail"
+			}]
+			rewards: [{
+				id: "29BF032635901FCA"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Инструменты пламени душ"
+			x: 9.5d
+			y: 3.0d
+			dependencies: ["0A80816576081E37"]
+			id: "3B14DC384CD19392"
+			tasks: [
+				{
+					id: "39E8D5FA3DEC7393"
+					type: "item"
+					item: {
+						id: "eidolon:soulfire_wand"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "43C4881C74034B8A"
+					type: "item"
+					item: {
+						id: "eidolon:bonechill_wand"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "78AA859303E03CA9"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Деревянный?"
+			x: -1.5d
+			y: 0.0d
+			dependencies: ["5015BFB31C22D755"]
+			id: "32C22803199B70EC"
+			tasks: [{
+				id: "389839795DA0ED34"
+				type: "item"
+				item: "eidolon:wooden_altar"
+			}]
+			rewards: [{
+				id: "2AA6FE39A61D7416"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Чучело?"
+			x: 0.5d
+			y: 0.0d
+			dependencies: ["32C22803199B70EC"]
+			id: "0CFE5EA4D909CB05"
+			tasks: [{
+				id: "49E9CE2AC71218E5"
+				type: "item"
+				item: "eidolon:straw_effigy"
+			}]
+			rewards: [{
+				id: "5DBEEF1544E9D4F7"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Свечи"
+			x: 5.5d
+			y: 5.0d
+			dependencies: ["5146E12A226D9011"]
+			id: "51EFBE8174699E35"
+			tasks: [
+				{
+					id: "01374BE509B3BDE3"
+					type: "item"
+					item: "eidolon:candle"
+					count: 2L
+				}
+				{
+					id: "733E2504F446CF7F"
+					type: "item"
+					item: "eidolon:candlestick"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "1CD2AF9833F07DE6"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Черепа"
+			x: 4.0d
+			y: 7.0d
+			dependencies: ["5A23919E78E703B1"]
+			id: "26070A92B5F10CDB"
+			tasks: [
+				{
+					id: "1ACB83F124DB3D2D"
+					type: "item"
+					item: "minecraft:skeleton_skull"
+				}
+				{
+					id: "18ABEFFBB5E45AF2"
+					type: "item"
+					item: "minecraft:zombie_head"
+				}
+				{
+					id: "0E5CB74BA959E33C"
+					type: "item"
+					item: "minecraft:wither_skeleton_skull"
+				}
+			]
+			rewards: [{
+				id: "2B95BF8615B358B2"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Растения"
+			x: 4.0d
+			y: 5.0d
+			dependencies: ["51EFBE8174699E35"]
+			id: "5A23919E78E703B1"
+			tasks: [
+				{
+					id: "63B0CB51F1BC01CD"
+					type: "item"
+					item: "minecraft:flower_pot"
+					count: 3L
+				}
+				{
+					id: "6C7B9E22137EFAA9"
+					type: "item"
+					item: "minecraft:crimson_fungus"
+				}
+				{
+					id: "0FA185834B23C8B7"
+					type: "item"
+					item: "minecraft:warped_fungus"
+				}
+				{
+					id: "57CD1C30812868C4"
+					type: "item"
+					item: "minecraft:wither_rose"
+				}
+			]
+			rewards: [{
+				id: "07D34ABCAF5E4287"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 7.0d
+			y: 7.0d
+			dependencies: ["5146E12A226D9011"]
+			id: "7C9D938A664FB495"
+			tasks: [{
+				id: "4CF4E97F4BBCB716"
+				type: "item"
+				item: "eidolon:goblet"
+			}]
+			rewards: [{
+				id: "63E9C62FE05AD6B1"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Это пригодится"
+			x: 9.5d
+			y: 4.5d
+			dependencies: ["3B14DC384CD19392"]
+			id: "160A020AAD925222"
+			tasks: [
+				{
+					id: "67BF7967F3D0C45B"
+					type: "item"
+					item: {
+						id: "eidolon:reaper_scythe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "364CB011B9C14C89"
+					type: "item"
+					item: {
+						id: "eidolon:cleaving_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "23F13D45953096E5"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 7.0d
+			y: -2.5d
+			dependencies: ["65D122A221167068"]
+			id: "6D8D1779DE058AD4"
+			tasks: [{
+				id: "301B9512CB0EAC21"
+				type: "item"
+				item: "eidolon:soul_enchanter"
+			}]
+			rewards: [{
+				id: "20E27C84755B9C30"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			title: "Эм..."
+			x: 9.5d
+			y: 0.0d
+			dependencies: [
+				"65D122A221167068"
+				"0A80816576081E37"
+			]
+			id: "712C821981683F87"
+			tasks: [{
+				id: "030F281D71321B8B"
+				type: "item"
+				item: {
+					id: "eidolon:reversal_pick"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "7F6FDEBB8EC168F5"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Тёмная ткань"
+			x: 8.5d
+			y: -1.5d
+			dependencies: ["65D122A221167068"]
+			id: "4D19CE9CD6A4642E"
+			tasks: [{
+				id: "10D79C02DAB075A3"
+				type: "item"
+				item: "eidolon:wicked_weave"
+				count: 16L
+			}]
+			rewards: [{
+				id: "2A95EA52291AE3C8"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Вещи чернокнижника"
+			x: 10.5d
+			y: -1.5d
+			dependencies: ["4D19CE9CD6A4642E"]
+			id: "0212847E7C1500F2"
+			tasks: [
+				{
+					id: "57550AF11BA67DF2"
+					type: "item"
+					item: {
+						id: "eidolon:warlock_hat"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6D676E545A1B7280"
+					type: "item"
+					item: {
+						id: "eidolon:warlock_cloak"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0EA6AB6B6F3C1FEC"
+					type: "item"
+					item: {
+						id: "eidolon:warlock_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "22F3125C6FB6C0A0"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 6.5d
+			y: 3.5d
+			dependencies: ["0A80816576081E37"]
+			id: "7571094FE11098E3"
+			tasks: [{
+				id: "4BE513B7B1AEF888"
+				type: "item"
+				item: "eidolon:basic_belt"
+			}]
+			rewards: [{
+				id: "6CAFA04AB8492F3C"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.5d
+			dependencies: ["7571094FE11098E3"]
+			id: "58E6DC97751D08FA"
+			tasks: [{
+				id: "004D30832A7C9AED"
+				type: "item"
+				item: "eidolon:gravity_belt"
+			}]
+			rewards: [{
+				id: "78CA2472296E5031"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.5d
+			dependencies: ["58E6DC97751D08FA"]
+			id: "184D065EC901474A"
+			tasks: [{
+				id: "798E2BA6F8B72B41"
+				type: "item"
+				item: "eidolon:resolute_belt"
+			}]
+			rewards: [{
+				id: "2F6AE7A1D0724C21"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 9.0d
+			y: -3.0d
+			dependencies: ["4D19CE9CD6A4642E"]
+			id: "3C010043C83233BE"
+			tasks: [{
+				id: "7DE6A3723711F17B"
+				type: "item"
+				item: "eidolon:prestigious_palm"
+			}]
+			rewards: [{
+				id: "241C71C7184F40F7"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 11.5d
+			y: 1.5d
+			dependencies: ["2CFECB265A69EF73"]
+			id: "18C5703D5432DD8D"
+			tasks: [{
+				id: "2A3C62576C41E6A2"
+				type: "item"
+				item: "eidolon:mind_shielding_plate"
+			}]
+			rewards: [{
+				id: "2FAB32B3C4CDEF67"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 11.5d
+			y: 3.0d
+			dependencies: ["18C5703D5432DD8D"]
+			id: "79E6A477028E1849"
+			tasks: [{
+				id: "22A9B067231AF480"
+				type: "item"
+				item: "eidolon:glass_hand"
+			}]
+			rewards: [{
+				id: "39E5D68C72EA4211"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+	]
+}

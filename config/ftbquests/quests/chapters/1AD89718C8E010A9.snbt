@@ -1,0 +1,1071 @@
+{
+	id: "1AD89718C8E010A9"
+	group: ""
+	order_index: 2
+	filename: "1AD89718C8E010A9"
+	title: "Мистическое Садоводство"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Это вам поможет создать семечки"
+			x: -1.0d
+			y: 1.5d
+			shape: "gear"
+			dependencies: [
+				"2709995071D18A11"
+				"21D01195495CE44C"
+			]
+			id: "1A237D6E0B40E77F"
+			tasks: [{
+				id: "6CABD8293F4B0B97"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "mysticalagriculture:guide"
+					}
+				}
+			}]
+			rewards: [{
+				id: "579F19BB9A3A991B"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Тут нужно гриндить"
+			x: 1.0d
+			y: 0.0d
+			dependencies: ["0093B2634A2AAF65"]
+			id: "03D0B2DC08696B57"
+			tasks: [
+				{
+					id: "1963291DA48C7F0E"
+					type: "item"
+					item: "mysticalagriculture:inferium_essence"
+					count: 32L
+				}
+				{
+					id: "21E8676FBCA6FB21"
+					type: "item"
+					item: "mysticalagriculture:inferium_ingot"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "7EFDEB605B42C79F"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			dependencies: ["03D0B2DC08696B57"]
+			id: "697719D0CC500447"
+			tasks: [{
+				id: "5C870F1928A45275"
+				type: "item"
+				item: "mysticalagriculture:inferium_gemstone"
+				count: 4L
+			}]
+			rewards: [{
+				id: "0D16F18E2B161460"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["697719D0CC500447"]
+			id: "08B4CFC0E7E1D2B6"
+			tasks: [
+				{
+					id: "29AD0B3CA902E166"
+					type: "item"
+					item: "mysticalagriculture:inferium_reprocessor"
+				}
+				{
+					id: "4F15EAD2184C3B25"
+					type: "item"
+					item: "mysticalagriculture:prudentium_furnace"
+				}
+			]
+			rewards: [{
+				id: "0AADE3C5656EC2A2"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Алтарь для семян?"
+			x: 2.5d
+			y: -1.5d
+			dependencies: ["697719D0CC500447"]
+			id: "1978D1FB521569BA"
+			tasks: [
+				{
+					id: "356EE69E3D50826A"
+					type: "item"
+					item: "mysticalagriculture:infusion_altar"
+				}
+				{
+					id: "214C5B93A19A7BEC"
+					type: "item"
+					item: "mysticalagriculture:infusion_pedestal"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "6FF119FB7AC8C24F"
+				type: "item"
+				item: "mysticalagriculture:prosperity_seed_base"
+				count: 3
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.5d
+			dependencies: ["03D0B2DC08696B57"]
+			id: "21D01195495CE44C"
+			tasks: [
+				{
+					id: "3CD304BBFF453D2F"
+					type: "item"
+					item: "mysticalagriculture:prudentium_essence"
+					count: 32L
+				}
+				{
+					id: "79ECB2CB03964DF8"
+					type: "item"
+					item: "mysticalagriculture:prudentium_ingot"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "78A1EA191121D8F6"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.0d
+			dependencies: ["21D01195495CE44C"]
+			id: "7604ED89981A9B1D"
+			tasks: [
+				{
+					id: "7708DB96CD3C8EB3"
+					type: "item"
+					item: "mysticalagriculture:tertium_essence"
+					count: 32L
+				}
+				{
+					id: "3A2F50FD4A5618EA"
+					type: "item"
+					item: "mysticalagriculture:tertium_ingot"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "5540ACB0DB83EC15"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.5d
+			dependencies: ["7604ED89981A9B1D"]
+			id: "45E96D8162678F23"
+			tasks: [
+				{
+					id: "3E3496CE6553DF34"
+					type: "item"
+					item: "mysticalagriculture:imperium_essence"
+					count: 32L
+				}
+				{
+					id: "7B02CC19D3B5B705"
+					type: "item"
+					item: "mysticalagriculture:imperium_ingot"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "2AA1E8ABD556D827"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 1.0d
+			y: 6.0d
+			dependencies: ["45E96D8162678F23"]
+			id: "57E73ACF92193E81"
+			tasks: [
+				{
+					id: "2B3EB271C49618E7"
+					type: "item"
+					item: "mysticalagriculture:supremium_essence"
+					count: 32L
+				}
+				{
+					id: "255BB0E5654AF8AB"
+					type: "item"
+					item: "mysticalagriculture:supremium_ingot"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "488483F370B825AB"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.5d
+			dependencies: ["21D01195495CE44C"]
+			id: "7E20175B66BD152F"
+			tasks: [{
+				id: "4249708E6276C540"
+				type: "item"
+				item: "mysticalagriculture:prudentium_gemstone"
+				count: 4L
+			}]
+			rewards: [{
+				id: "584ED0077F2BDB8E"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.5d
+			dependencies: ["7E20175B66BD152F"]
+			id: "556FC2B14F3006D1"
+			tasks: [
+				{
+					id: "21022F5349387DE3"
+					type: "item"
+					item: "mysticalagriculture:prudentium_reprocessor"
+				}
+				{
+					id: "42A79473E4D9D36C"
+					type: "item"
+					item: "mysticalagriculture:prudentium_furnace"
+				}
+			]
+			rewards: [{
+				id: "65B9847ED2FB14FB"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.5d
+			dependencies: ["556FC2B14F3006D1"]
+			id: "672CB01C730DA7EE"
+			tasks: [
+				{
+					id: "18D610E7EB801D6B"
+					type: "item"
+					item: "mysticalagriculture:prudentium_farmland"
+					count: 8L
+				}
+				{
+					id: "574B61A30058E953"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:prudentium_watering_can"
+						Count: 1b
+						tag: {
+							Water: 0b
+							Active: 0b
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4B56A35AD77B906D"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.0d
+			dependencies: ["7604ED89981A9B1D"]
+			id: "7B770F1D4A4D8764"
+			tasks: [{
+				id: "4572B06881F44D74"
+				type: "item"
+				item: "mysticalagriculture:tertium_gemstone"
+				count: 4L
+			}]
+			rewards: [{
+				id: "2942E32029BFDE7D"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			dependencies: ["7B770F1D4A4D8764"]
+			id: "7C1D0E265BB256AE"
+			tasks: [
+				{
+					id: "7124CCFF106C3AD6"
+					type: "item"
+					item: "mysticalagriculture:tertium_reprocessor"
+				}
+				{
+					id: "0EA1C0483F9B0D58"
+					type: "item"
+					item: "mysticalagriculture:tertium_furnace"
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: 3.0d
+			dependencies: ["7C1D0E265BB256AE"]
+			id: "013B4F06E799A72D"
+			tasks: [
+				{
+					id: "73CEDA1A1153F2C4"
+					type: "item"
+					item: "mysticalagriculture:tertium_farmland"
+					count: 8L
+				}
+				{
+					id: "30D6B205A70FF561"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:tertium_watering_can"
+						Count: 1b
+						tag: {
+							Water: 0b
+							Active: 0b
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "1B2CF1B4B43131A7"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 2.5d
+			y: 4.5d
+			dependencies: ["45E96D8162678F23"]
+			id: "2FB13CE8C60A2982"
+			tasks: [{
+				id: "216DACC91937BC26"
+				type: "item"
+				item: "mysticalagriculture:imperium_gemstone"
+				count: 4L
+			}]
+			rewards: [{
+				id: "54E08379B7241181"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.5d
+			dependencies: ["2FB13CE8C60A2982"]
+			id: "6776DBFEB3E6B7C0"
+			tasks: [
+				{
+					id: "731C4D02015A8214"
+					type: "item"
+					item: "mysticalagriculture:imperium_reprocessor"
+				}
+				{
+					id: "2EF8F47024B25DB8"
+					type: "item"
+					item: "mysticalagriculture:imperium_furnace"
+				}
+			]
+			rewards: [{
+				id: "1395F86F47E89478"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 5.5d
+			y: 4.5d
+			dependencies: ["6776DBFEB3E6B7C0"]
+			id: "1DDE6BDF78120525"
+			tasks: [
+				{
+					id: "54B482EE58C42098"
+					type: "item"
+					item: "mysticalagriculture:imperium_farmland"
+					count: 8L
+				}
+				{
+					id: "39D276A38E64F68C"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:imperium_watering_can"
+						Count: 1b
+						tag: {
+							Water: 0b
+							Active: 0b
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "08CA935D7191EE12"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 2.5d
+			y: 6.0d
+			dependencies: ["57E73ACF92193E81"]
+			id: "4A7AED343C934A78"
+			tasks: [{
+				id: "50C79E9EB30E3820"
+				type: "item"
+				item: "mysticalagriculture:supremium_gemstone"
+				count: 4L
+			}]
+			rewards: [{
+				id: "10FA969B68D19034"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 4.0d
+			y: 6.0d
+			dependencies: ["4A7AED343C934A78"]
+			id: "1262E513734359B9"
+			tasks: [
+				{
+					id: "60695574F6EA1ABC"
+					type: "item"
+					item: "mysticalagriculture:supremium_reprocessor"
+				}
+				{
+					id: "045F994DAD565E06"
+					type: "item"
+					item: "mysticalagriculture:supremium_furnace"
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: 6.0d
+			dependencies: ["1262E513734359B9"]
+			id: "011FDB42CD07AC59"
+			tasks: [
+				{
+					id: "4712C6C8FC90DF5F"
+					type: "item"
+					item: "mysticalagriculture:supremium_farmland"
+					count: 8L
+				}
+				{
+					id: "0C52E35AAB205CC5"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:supremium_watering_can"
+						Count: 1b
+						tag: {
+							Water: 0b
+							Active: 0b
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "2DFFAAEBC1CAC3D4"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.0d
+			dependencies: ["08B4CFC0E7E1D2B6"]
+			id: "4232C3855F7F2BC2"
+			tasks: [
+				{
+					id: "403082E70940158B"
+					type: "item"
+					item: "mysticalagriculture:inferium_farmland"
+					count: 8L
+				}
+				{
+					id: "556B06BE5C6BDE22"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:inferium_watering_can"
+						Count: 1b
+						tag: {
+							Water: 0b
+							Active: 0b
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "192C05B88CC215A5"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.0d
+			dependencies: ["4232C3855F7F2BC2"]
+			id: "70F34B8904D90614"
+			tasks: [
+				{
+					id: "10ECE1CB8F227AC2"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:inferium_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7F8B5E90D8D53B88"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:inferium_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4E6E29C4516C08DE"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:inferium_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "3E7D3954DB77865A"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 8.5d
+			y: 0.0d
+			dependencies: ["70F34B8904D90614"]
+			id: "3ADF1272078F0DCC"
+			tasks: [
+				{
+					id: "0E95A26D4302C751"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:inferium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2DAC7069617A6138"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:inferium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0616D0DC382EB40B"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:inferium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4D10FC6A2AD96E6C"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:inferium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4AD46EF61DA3EE8F"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 7.0d
+			y: 1.5d
+			dependencies: ["672CB01C730DA7EE"]
+			id: "7B4F01529E21B5F3"
+			tasks: [
+				{
+					id: "121748448C9831EC"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:prudentium_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "21E8B45EB16439DB"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:prudentium_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "47097419204DFE41"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:prudentium_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "59CC8C2E975D9780"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 8.5d
+			y: 1.5d
+			dependencies: ["7B4F01529E21B5F3"]
+			id: "1B0341B015D73225"
+			tasks: [
+				{
+					id: "66E263F107C83BDF"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:prudentium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "10EBB3456DB91ACF"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:prudentium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "762DC1DF1BD9B41D"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:prudentium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5EF66711AE54B68D"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:prudentium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4AFDF00192EFD856"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 7.0d
+			y: 3.0d
+			dependencies: ["013B4F06E799A72D"]
+			id: "07AF3C8536AF63BD"
+			tasks: [
+				{
+					id: "5FF1FC7DF834D6DC"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:tertium_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3D793CA19829DBBA"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:tertium_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3F3C9B1E04E0797E"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:tertium_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "212B02BA72AFE67C"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 8.5d
+			y: 3.0d
+			dependencies: ["07AF3C8536AF63BD"]
+			id: "1F1E6DB687C369BC"
+			tasks: [
+				{
+					id: "4A8D4830F1DBA8EB"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:tertium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "06D022B59B929575"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:tertium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1AFFBDE5E8089783"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:tertium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "312904BB0D30EEE3"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:tertium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "39C42DCF8F7D9CCE"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 7.0d
+			y: 4.5d
+			dependencies: ["1DDE6BDF78120525"]
+			id: "042E1BF106C0D702"
+			tasks: [
+				{
+					id: "08E0E80D2CFE9E6D"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:imperium_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "43E393BFDAA82ABC"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:imperium_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4E19959BE8894B3C"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:imperium_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4EE2B352A6F8110E"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 8.5d
+			y: 4.5d
+			dependencies: ["042E1BF106C0D702"]
+			id: "014BF6C51596A238"
+			tasks: [
+				{
+					id: "78C7B411DFA70923"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:imperium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1C14266E77231687"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:imperium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "77A48B2FA18AA2A0"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:imperium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "72B8C1BA278CBFCE"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:imperium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "734ECACE5E341159"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 7.0d
+			y: 6.0d
+			dependencies: ["011FDB42CD07AC59"]
+			id: "10E5864B10EB2819"
+			tasks: [
+				{
+					id: "296EC3C9A5BFBFE7"
+					type: "item"
+					item: "mysticalagriculture:supremium_sword"
+				}
+				{
+					id: "3B7B4D1E17C8B1D4"
+					type: "item"
+					item: "mysticalagriculture:supremium_pickaxe"
+				}
+				{
+					id: "0BB787F29F1F7A23"
+					type: "item"
+					item: "mysticalagriculture:supremium_axe"
+				}
+			]
+			rewards: [{
+				id: "064C81FA482831D2"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 8.5d
+			y: 6.0d
+			dependencies: ["10E5864B10EB2819"]
+			id: "1CEFA4AD898D7F6C"
+			tasks: [
+				{
+					id: "4C8DD8F59E6F3BF4"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:supremium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0A6340C20A522A90"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:supremium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2A6A6F341B9FA8F1"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:supremium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5104F2B3187D3C6E"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:supremium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "1A9783A68EFA766C"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: -1.0d
+			y: 6.0d
+			dependencies: ["57E73ACF92193E81"]
+			id: "2CA448405B3B51D4"
+			tasks: [{
+				id: "72E053A5A8F2E196"
+				type: "item"
+				item: "mysticalagriculture:master_infusion_crystal"
+			}]
+			rewards: [{
+				id: "7A766A10A782ED7D"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+		}
+		{
+			title: "Он вам поможет"
+			x: -1.0d
+			y: 0.0d
+			dependencies: ["248E1A4FA57F9B39"]
+			id: "0093B2634A2AAF65"
+			tasks: [{
+				id: "68912B14CE3C6503"
+				type: "item"
+				item: {
+					id: "mysticalagriculture:infusion_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "5A05FEF046A45A52"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+	]
+}

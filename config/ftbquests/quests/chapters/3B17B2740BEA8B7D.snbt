@@ -1,0 +1,684 @@
+{
+	id: "3B17B2740BEA8B7D"
+	group: ""
+	order_index: 5
+	filename: "3B17B2740BEA8B7D"
+	title: "Магия Крови"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Кровавый алтарь"
+			x: -0.5d
+			y: 0.5d
+			shape: "gear"
+			dependencies: ["5015BFB31C22D755"]
+			id: "0224AF40CC20653C"
+			tasks: [{
+				id: "5EF6616E15DCBFEF"
+				type: "item"
+				item: "bloodmagic:altar"
+			}]
+			rewards: [{
+				id: "22E1C0066F099103"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Будет больно"
+			x: 1.5d
+			y: 0.5d
+			dependencies: ["0224AF40CC20653C"]
+			id: "1D0D691707FA23E5"
+			tasks: [{
+				id: "36E8634781EFA8FF"
+				type: "item"
+				item: {
+					id: "bloodmagic:sacrificialdagger"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "2E51B96ECC7589DB"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Сланец"
+			x: 3.0d
+			y: 1.5d
+			dependencies: ["1D0D691707FA23E5"]
+			id: "3155E62E58C11A05"
+			tasks: [{
+				id: "4E4B838118C84826"
+				type: "item"
+				item: "bloodmagic:blankslate"
+			}]
+			rewards: [{
+				id: "703571EAA065A325"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "1 уровень кровавого шара"
+			x: 3.0d
+			y: -0.5d
+			dependencies: ["1D0D691707FA23E5"]
+			id: "55DCE5B5B52F031C"
+			tasks: [{
+				id: "6FC703D0D44B4CA7"
+				type: "item"
+				item: "bloodmagic:weakbloodorb"
+			}]
+			rewards: [{
+				id: "032E895EDD29F010"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Руны"
+			x: 4.5d
+			y: 0.5d
+			dependencies: [
+				"3155E62E58C11A05"
+				"55DCE5B5B52F031C"
+			]
+			id: "250FFDE864C699A2"
+			tasks: [{
+				id: "52A3618B03A5A8D3"
+				type: "item"
+				item: "bloodmagic:blankrune"
+				count: 4L
+			}]
+			rewards: [{
+				id: "7517F8363D16BFED"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Это поможет освоиться в этом всём"
+			x: 6.0d
+			y: 0.5d
+			dependencies: ["250FFDE864C699A2"]
+			id: "72870DC3140C7CD4"
+			tasks: [{
+				id: "6001A4B9F3ADC870"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "bloodmagic:guide"
+					}
+				}
+			}]
+			rewards: [{
+				id: "276FE59056A6D7C5"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "2 уровень алтаря"
+			x: 7.5d
+			y: 0.5d
+			dependencies: ["72870DC3140C7CD4"]
+			id: "50CA709CBBB616CC"
+			tasks: [{
+				id: "348B3EBC5719D799"
+				type: "item"
+				item: "bloodmagic:blankrune"
+				count: 8L
+			}]
+			rewards: [{
+				id: "218A98FCDA1D08C5"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Алхимия"
+			x: 7.5d
+			y: 2.0d
+			dependencies: ["50CA709CBBB616CC"]
+			id: "4B6BD2B5058C8CAD"
+			tasks: [{
+				id: "0C9A9A027D8EA7D5"
+				type: "item"
+				item: "bloodmagic:alchemytable"
+			}]
+			rewards: [{
+				id: "622746BD4976D305"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "2 уровень кровавого шара"
+			x: 9.0d
+			y: 0.5d
+			dependencies: ["50CA709CBBB616CC"]
+			id: "5383D9B7FBE43137"
+			tasks: [{
+				id: "3A10547212003FB2"
+				type: "item"
+				item: "bloodmagic:apprenticebloodorb"
+			}]
+			rewards: [{
+				id: "08BE4D4A8A429FF0"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Адская Кузня"
+			x: 9.0d
+			y: 2.0d
+			dependencies: ["4B6BD2B5058C8CAD"]
+			id: "79389D32AE2A5B13"
+			tasks: [{
+				id: "1EA99609DD62A0C7"
+				type: "item"
+				item: "bloodmagic:soulforge"
+			}]
+			rewards: [{
+				id: "15B546487DABB808"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Демонические приборы"
+			x: 10.5d
+			y: 0.5d
+			dependencies: ["79389D32AE2A5B13"]
+			id: "0566058A84CFDFEB"
+			tasks: [
+				{
+					id: "4E017BE128D2F020"
+					type: "item"
+					item: "bloodmagic:demoncrucible"
+				}
+				{
+					id: "7818842525AE855A"
+					type: "item"
+					item: "bloodmagic:demoncrystallizer"
+				}
+			]
+			rewards: [{
+				id: "6C51594DB1130F36"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "3 уровень алтаря"
+			x: 7.5d
+			y: 3.5d
+			dependencies: ["4B6BD2B5058C8CAD"]
+			id: "590B4F3F4E9D4DE7"
+			tasks: [
+				{
+					id: "2FDB457BC1B64BC4"
+					type: "item"
+					item: "bloodmagic:blankrune"
+					count: 20L
+				}
+				{
+					id: "55315277783AD42C"
+					type: "item"
+					item: "minecraft:stone_bricks"
+					count: 8L
+				}
+				{
+					id: "04C8912B0F80DF0F"
+					type: "item"
+					item: "minecraft:glowstone"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "5F7945C88C0D986D"
+				type: "xp_levels"
+				xp_levels: 7
+			}]
+		}
+		{
+			title: "3 уровень кровавого шара"
+			x: 9.0d
+			y: 4.5d
+			dependencies: ["590B4F3F4E9D4DE7"]
+			id: "1B97292D71A05464"
+			tasks: [{
+				id: "39EDA58490875DDA"
+				type: "item"
+				item: "bloodmagic:magicianbloodorb"
+			}]
+			rewards: [{
+				id: "5397F66CD4D1DEC1"
+				type: "xp_levels"
+				xp_levels: 7
+			}]
+		}
+		{
+			title: "4 уровень алтаря"
+			x: 7.5d
+			y: 6.0d
+			dependencies: ["590B4F3F4E9D4DE7"]
+			id: "2D32F4DB14E4FCCD"
+			tasks: [
+				{
+					id: "12CC7CB655892CB3"
+					type: "item"
+					item: "bloodmagic:blankrune"
+					count: 28L
+				}
+				{
+					id: "3876CBFB61FDC651"
+					type: "item"
+					item: "minecraft:stone_bricks"
+					count: 16L
+				}
+				{
+					id: "036A6B3AE642B20C"
+					type: "item"
+					item: "bloodmagic:largebloodstonebrick"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "725117FEB3DBA44E"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+		}
+		{
+			title: "Алхимическая реакционная камера"
+			x: 10.5d
+			y: 3.0d
+			dependencies: [
+				"1B97292D71A05464"
+				"6186B06AC5892AB4"
+			]
+			id: "7DE5A7E6B763B17B"
+			tasks: [{
+				id: "21C1511A7E39E8D5"
+				type: "item"
+				item: "bloodmagic:alchemicalreactionchamber"
+			}]
+			rewards: [{
+				id: "74286414542A1C5A"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 11.5d
+			y: 1.5d
+			dependencies: ["250FDA6D15842FE0"]
+			id: "7DB7136989A111E8"
+			tasks: [{
+				id: "2B02A43133FE02C6"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgempetty"
+					Count: 1b
+					tag: {
+						souls: 64.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "34D341A2E7E4720C"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 12.5d
+			y: 1.5d
+			dependencies: ["7DB7136989A111E8"]
+			id: "268DB9FA5F0C72D8"
+			tasks: [{
+				id: "13A7BCF0DE1E8D65"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemlesser"
+					Count: 1b
+					tag: {
+						souls: 256.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "154A5A7125273AB9"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 13.5d
+			y: 1.5d
+			dependencies: ["268DB9FA5F0C72D8"]
+			id: "310E2EB53E11B878"
+			tasks: [{
+				id: "7E2403B470A177D6"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemcommon"
+					Count: 1b
+					tag: {
+						souls: 1024.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "0966570370EFAF87"
+				type: "xp_levels"
+				xp_levels: 4
+			}]
+		}
+		{
+			x: 14.5d
+			y: 1.5d
+			dependencies: ["310E2EB53E11B878"]
+			id: "7FF658E2CF877613"
+			tasks: [{
+				id: "725BE5CF517D73C1"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemgreater"
+					Count: 1b
+					tag: {
+						souls: 4096.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "0116089706BD7556"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 10.5d
+			y: 1.5d
+			dependencies: ["79389D32AE2A5B13"]
+			id: "250FDA6D15842FE0"
+			tasks: [{
+				id: "01EEC24D98DA7A04"
+				type: "item"
+				item: {
+					id: "bloodmagic:basemonstersoul"
+					Count: 1b
+					tag: {
+						souls: 5.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "45A81128024615CD"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 9.0d
+			y: 3.0d
+			dependencies: ["590B4F3F4E9D4DE7"]
+			id: "6186B06AC5892AB4"
+			tasks: [{
+				id: "0184D67F1A31D670"
+				type: "item"
+				item: "bloodmagic:infusedslate"
+			}]
+			rewards: [{
+				id: "74823E78C664CADE"
+				type: "xp_levels"
+				xp_levels: 4
+			}]
+		}
+		{
+			x: 13.5d
+			y: 3.5d
+			dependencies: [
+				"310E2EB53E11B878"
+				"7E5E9BAE93386BD9"
+			]
+			id: "2A551447CDD6AEB8"
+			tasks: [{
+				id: "16B318AA937F26B4"
+				type: "item"
+				item: {
+					id: "bloodmagic:sanguinereverter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "5FF72CA8CE70744C"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 14.5d
+			y: 3.5d
+			dependencies: [
+				"7FF658E2CF877613"
+				"2A551447CDD6AEB8"
+			]
+			id: "1757C36295DC6E95"
+			tasks: [{
+				id: "7D10281D65E77193"
+				type: "item"
+				item: {
+					id: "bloodmagic:primitive_crystalline_resonator"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "37A20A9DC78D2A2C"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 12.0d
+			y: 3.5d
+			dependencies: ["7DE5A7E6B763B17B"]
+			id: "7E5E9BAE93386BD9"
+			tasks: [
+				{
+					id: "3B8691A49E9F165A"
+					type: "item"
+					item: {
+						id: "bloodmagic:furnacecell_primitive"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "79B2FDC381B47FF3"
+					type: "item"
+					item: {
+						id: "bloodmagic:primitive_hydration_cell"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "1134F45EA5EFDE26"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Последний уровень кровавого шара"
+			x: 9.0d
+			y: 6.0d
+			dependencies: ["2D32F4DB14E4FCCD"]
+			id: "1716CC20A926CA45"
+			tasks: [{
+				id: "2E5FB3F752DD2028"
+				type: "item"
+				item: "bloodmagic:masterbloodorb"
+			}]
+			rewards: [{
+				id: "1E63F7D11AA1205E"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			title: "Последний уровень алтаря"
+			x: 7.5d
+			y: 7.5d
+			dependencies: ["2D32F4DB14E4FCCD"]
+			id: "761FBF36304D02D2"
+			tasks: [
+				{
+					id: "6C8C918D84407E6F"
+					type: "item"
+					item: "bloodmagic:blankrune"
+					count: 52L
+				}
+				{
+					id: "107C21734D7BFADF"
+					type: "item"
+					item: "minecraft:beacon"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "564F27103640AECC"
+				type: "xp_levels"
+				xp_levels: 20
+			}]
+		}
+		{
+			x: 7.5d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["50CA709CBBB616CC"]
+			id: "2D96714439CC1A0C"
+			tasks: [{
+				id: "4586A615EEA419C5"
+				type: "item"
+				item: "bloodmagic:speedrune"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["50CA709CBBB616CC"]
+			id: "3639BF1D5BF39E32"
+			tasks: [{
+				id: "34422F00C6F4D020"
+				type: "item"
+				item: "bloodmagic:sacrificerune"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["50CA709CBBB616CC"]
+			id: "2A7EC907136C8736"
+			tasks: [{
+				id: "248E62597738085A"
+				type: "item"
+				item: "bloodmagic:selfsacrificerune"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["50CA709CBBB616CC"]
+			id: "252858777628A240"
+			tasks: [{
+				id: "30CB2545AACCBD04"
+				type: "item"
+				item: "bloodmagic:dislocationrune"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["50CA709CBBB616CC"]
+			id: "5B2998FC3CED9F42"
+			tasks: [{
+				id: "428084BB3591F369"
+				type: "item"
+				item: "bloodmagic:altarcapacityrune"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -3.0d
+			hide_dependency_lines: true
+			dependencies: ["50CA709CBBB616CC"]
+			id: "291AEB13FB9B15B1"
+			tasks: [{
+				id: "2BCE2D59B216E562"
+				type: "item"
+				item: "bloodmagic:bettercapacityrune"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["50CA709CBBB616CC"]
+			id: "2D47C5614FF3DC04"
+			tasks: [{
+				id: "7978F0DC7A9E2225"
+				type: "item"
+				item: "bloodmagic:orbcapacityrune"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -3.0d
+			hide_dependency_lines: true
+			dependencies: ["50CA709CBBB616CC"]
+			id: "0D52A95737BDEE0F"
+			tasks: [{
+				id: "297AEBC32480933C"
+				type: "item"
+				item: "bloodmagic:accelerationrune"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -3.0d
+			hide_dependency_lines: true
+			dependencies: ["50CA709CBBB616CC"]
+			id: "2B0AF6A83E323D4A"
+			tasks: [{
+				id: "0C2D8D1BED339DCF"
+				type: "item"
+				item: "bloodmagic:chargingrune"
+			}]
+		}
+	]
+}

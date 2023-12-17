@@ -1,0 +1,755 @@
+{
+	id: "664C5F5FF8936414"
+	group: ""
+	order_index: 3
+	filename: "664C5F5FF8936414"
+	title: "Окультная Магия"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Это поможет вам в освоении Окультной Магии"
+			x: -2.5d
+			y: 0.0d
+			shape: "gear"
+			dependencies: ["7C4F8CC06642CB1D"]
+			id: "2F22BA1069E80801"
+			tasks: [
+				{
+					id: "5C57644ED5C6CC7F"
+					type: "item"
+					item: "occultism:dictionary_of_spirits"
+				}
+				{
+					id: "5509C66451BCEC07"
+					type: "item"
+					item: "occultism:datura"
+					count: 10L
+				}
+			]
+			rewards: [{
+				id: "627504155A63C4D7"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Потусторонее"
+			x: 1.0d
+			y: 0.0d
+			dependencies: ["20217675596BEDD9"]
+			id: "5FF87ABCEE0A6FE9"
+			tasks: [
+				{
+					id: "720FB72CCDDED18A"
+					type: "item"
+					item: "occultism:otherstone"
+					count: 16L
+				}
+				{
+					id: "6CA0F15AD2E2302B"
+					type: "item"
+					item: "occultism:otherworld_log"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "1ED273C17C38DA48"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Окультный огонь"
+			x: 2.5d
+			y: 0.0d
+			dependencies: ["5FF87ABCEE0A6FE9"]
+			id: "0E4FBDBFEA6E0766"
+			tasks: [
+				{
+					id: "23EE1CDAFE04514F"
+					type: "item"
+					item: {
+						id: "minecraft:flint_and_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "18328F8E993FD603"
+					type: "item"
+					item: "occultism:datura"
+				}
+			]
+			rewards: [{
+				id: "168FE1F423640B55"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Начало очень интересный ритуалов"
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["0E4FBDBFEA6E0766"]
+			id: "251239D7DDEC6A74"
+			tasks: [
+				{
+					id: "3FFB7F5BE66148EB"
+					type: "item"
+					item: "occultism:sacrificial_bowl"
+					count: 4L
+				}
+				{
+					id: "35EA8327D76CB3B1"
+					type: "item"
+					item: "occultism:golden_sacrificial_bowl"
+				}
+				{
+					id: "76D5E3BBCE947A67"
+					type: "item"
+					item: {
+						id: "occultism:chalk_white"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "714B33A192ABB083"
+					type: "item"
+					item: "occultism:candle_white"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "75AB09C857BEC468"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Ой, ошика"
+			x: 4.0d
+			y: -1.5d
+			dependencies: ["251239D7DDEC6A74"]
+			id: "0B707003BCCDCACD"
+			tasks: [{
+				id: "0987AA2835FA45E2"
+				type: "item"
+				item: "occultism:brush"
+			}]
+			rewards: [{
+				id: "7F1A6272E780A0B5"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Нужная вещь"
+			x: 5.5d
+			y: 0.0d
+			dependencies: ["251239D7DDEC6A74"]
+			id: "4BDBCFB3A2B6A15E"
+			tasks: [{
+				id: "1EEFA3D39D363890"
+				type: "item"
+				item: {
+					id: "occultism:book_of_binding_bound_foliot"
+					Count: 1b
+					tag: {
+						spiritName: "Drakcramur"
+					}
+				}
+			}]
+			rewards: [{
+				id: "6A585D3946FDAE49"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Интересненько"
+			x: 6.0d
+			y: 1.5d
+			dependencies: ["4BDBCFB3A2B6A15E"]
+			id: "223F7F374DEC8E59"
+			tasks: [
+				{
+					id: "251E8142CC9A83D5"
+					type: "item"
+					item: "occultism:iron_dust"
+					count: 16L
+				}
+				{
+					id: "04F64C73436F9AEB"
+					type: "item"
+					item: "occultism:gold_dust"
+					count: 16L
+				}
+				{
+					id: "14D82418FC15A1E4"
+					type: "item"
+					item: "occultism:copper_dust"
+					count: 16L
+				}
+				{
+					id: "4C61963099DD0767"
+					type: "item"
+					item: "occultism:silver_dust"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "7256777573593F18"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Золотой!"
+			x: 7.0d
+			y: 0.0d
+			dependencies: ["4BDBCFB3A2B6A15E"]
+			id: "590A112782B246CC"
+			tasks: [{
+				id: "6939AC3A5681BECC"
+				type: "item"
+				item: {
+					id: "occultism:chalk_gold"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "04DD8C606FEC7E51"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Ну и крафт"
+			x: 8.5d
+			y: 0.0d
+			dependencies: ["590A112782B246CC"]
+			id: "509411E4EB8F7570"
+			tasks: [{
+				id: "21BD883E7ECDE4C8"
+				type: "item"
+				item: {
+					id: "occultism:otherworld_goggles"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "3336E405142D51DD"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Очень слабая"
+			x: 8.5d
+			y: 3.0d
+			dependencies: ["0357B3CA57AF5582"]
+			id: "513C5D423201DDAC"
+			tasks: [{
+				id: "3B8D51E354A72712"
+				type: "item"
+				item: {
+					id: "occultism:infused_pickaxe"
+					Count: 1b
+					tag: {
+						spiritName: "Zedmider"
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "082D2A79DBC610A4"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Джинни"
+			x: 8.5d
+			y: 1.5d
+			dependencies: ["509411E4EB8F7570"]
+			id: "0357B3CA57AF5582"
+			tasks: [{
+				id: "460CA979FA0113BE"
+				type: "item"
+				item: {
+					id: "occultism:book_of_binding_bound_djinni"
+					Count: 1b
+					tag: {
+						spiritName: "Jagcloer"
+					}
+				}
+			}]
+			rewards: [{
+				id: "5C91CCAB6C021D4F"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Еле нашёл"
+			x: 10.0d
+			y: 2.0d
+			dependencies: ["513C5D423201DDAC"]
+			id: "26003D1FA130F618"
+			tasks: [{
+				id: "2BE712A97E8CE359"
+				type: "item"
+				item: "occultism:iesnium_ore"
+				count: 8L
+			}]
+			rewards: [{
+				id: "50ED2BC3C0937FD8"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Эта будет по-прочнее"
+			x: 11.5d
+			y: 3.0d
+			dependencies: ["26003D1FA130F618"]
+			id: "52B1875F329E7C99"
+			tasks: [{
+				id: "1E14FDD135DE60BA"
+				type: "item"
+				item: {
+					id: "occultism:iesnium_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "6EAAF76FFBF1EA93"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Большое хранилище"
+			x: 10.5d
+			y: 0.5d
+			dependencies: ["26003D1FA130F618"]
+			id: "5EAC56F24DC24F84"
+			tasks: [{
+				id: "658822BCB7A217BA"
+				type: "item"
+				item: "occultism:storage_controller_base"
+			}]
+			rewards: [{
+				id: "3CA53C184B525186"
+				type: "xp_levels"
+				xp_levels: 7
+			}]
+		}
+		{
+			title: "Без проводов"
+			x: 10.5d
+			y: -2.0d
+			dependencies: ["5EAC56F24DC24F84"]
+			id: "6C40774CD285FF4A"
+			tasks: [{
+				id: "12BB7F62C29A60EA"
+				type: "item"
+				item: {
+					id: "occultism:storage_remote"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "581ABE400B767E30"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Гадает на блоки"
+			x: -0.5d
+			y: 0.0d
+			dependencies: ["2F22BA1069E80801"]
+			id: "20217675596BEDD9"
+			tasks: [{
+				id: "545017515825E6DD"
+				type: "item"
+				item: {
+					id: "occultism:divination_rod"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "222D9CFC2308CA32"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Главное - стабильность"
+			x: 12.5d
+			y: 0.5d
+			dependencies: ["5EAC56F24DC24F84"]
+			id: "56A78E0D2A5AEE37"
+			tasks: [{
+				id: "50CD1205E15B1AAA"
+				type: "item"
+				item: {
+					id: "occultism:stable_wormhole"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "1ABB6F92B9E06EC7"
+				type: "xp_levels"
+				xp_levels: 6
+			}]
+		}
+		{
+			title: "Лампа?"
+			x: 12.5d
+			y: 2.0d
+			dependencies: ["26003D1FA130F618"]
+			id: "1A6C501FB251E672"
+			tasks: [{
+				id: "584EF84C0A8C6710"
+				type: "item"
+				item: "occultism:magic_lamp_empty"
+			}]
+			rewards: [{
+				id: "2D86793E34D4FD20"
+				type: "xp_levels"
+				xp_levels: 7
+			}]
+		}
+		{
+			title: "Неплохо"
+			x: 6.0d
+			y: -1.5d
+			dependencies: ["4BDBCFB3A2B6A15E"]
+			id: "5742E2E3FAC1CB2B"
+			tasks: [{
+				id: "76A4A15195F0ADD0"
+				type: "item"
+				item: {
+					id: "occultism:satchel"
+					Count: 1b
+					tag: {
+						spiritName: "Mormeeaeus"
+					}
+				}
+			}]
+			rewards: [{
+				id: "5BC9EAE802454C93"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Шахтёр Фолиот"
+			x: 13.5d
+			y: 3.5d
+			dependencies: [
+				"1A6C501FB251E672"
+				"52B1875F329E7C99"
+			]
+			id: "452A7E73850274E9"
+			tasks: [{
+				id: "0AF0FE1D6BA2F109"
+				type: "item"
+				item: {
+					id: "occultism:miner_foliot_unspecialized"
+					Count: 1b
+					tag: {
+						spiritName: "Azakmiried"
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "19193275ED13E196"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Кристаллы"
+			x: 10.0d
+			y: 3.5d
+			dependencies: ["26003D1FA130F618"]
+			id: "7359F86D2562B523"
+			tasks: [{
+				id: "41FBA65F8431A10B"
+				type: "item"
+				item: "occultism:spirit_attuned_crystal"
+				count: 8L
+			}]
+			rewards: [{
+				id: "4E3FC3A995F57E2A"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Авто добыча?"
+			x: 9.0d
+			y: 5.0d
+			dependencies: ["7359F86D2562B523"]
+			id: "5814034D797CBC77"
+			tasks: [{
+				id: "07A89AE7D33B8C1F"
+				type: "item"
+				item: "occultism:dimensional_mineshaft"
+			}]
+			rewards: [{
+				id: "6C163E805EB2336A"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Шахтёр Джинни"
+			x: 11.0d
+			y: 5.0d
+			dependencies: ["7359F86D2562B523"]
+			id: "5ADD540C5ADAF664"
+			tasks: [{
+				id: "45D1ACE6D2C03051"
+				type: "item"
+				item: {
+					id: "occultism:miner_djinni_ores"
+					Count: 1b
+					tag: {
+						spiritName: "Azakzoires"
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "4DF8EDF4D88372E4"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 12.0d
+			y: -1.0d
+			dependencies: ["5EAC56F24DC24F84"]
+			id: "1C0C878462016A35"
+			tasks: [{
+				id: "2A4B2F2BA8F29874"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier1"
+			}]
+			rewards: [{
+				id: "2CABBA66E23AD037"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			x: 14.0d
+			y: -1.0d
+			dependencies: ["1C0C878462016A35"]
+			id: "5BEA935E5153358B"
+			tasks: [{
+				id: "51644969CE5786B3"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier2"
+			}]
+			rewards: [{
+				id: "5C00B848E0E2800A"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			title: "Африт"
+			x: 15.5d
+			y: -1.0d
+			dependencies: ["5BEA935E5153358B"]
+			id: "529FC1475BD4C1D4"
+			tasks: [{
+				id: "4E0A96A6C8CCD6B2"
+				type: "item"
+				item: {
+					id: "occultism:book_of_binding_bound_afrit"
+					Count: 1b
+					tag: {
+						spiritName: "Razoirure"
+					}
+				}
+			}]
+			rewards: [{
+				id: "3792510CAB29A849"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			x: 15.5d
+			y: 0.5d
+			dependencies: ["529FC1475BD4C1D4"]
+			id: "7B21C865C9F6D55D"
+			tasks: [{
+				id: "3CE894C15A0597FD"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier3"
+			}]
+			rewards: [{
+				id: "0F20590229C5BEEB"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Марид"
+			x: 16.5d
+			y: 2.0d
+			dependencies: ["7B21C865C9F6D55D"]
+			id: "0AC3A7EB3CD359F3"
+			tasks: [{
+				id: "42C52C2E3389926F"
+				type: "item"
+				item: {
+					id: "occultism:book_of_binding_bound_marid"
+					Count: 1b
+					tag: {
+						spiritName: "Azurzoiraeus"
+					}
+				}
+			}]
+			rewards: [{
+				id: "44EF054D1C7F141D"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 15.5d
+			y: 3.5d
+			dependencies: ["0AC3A7EB3CD359F3"]
+			id: "7AE602EBC1A01F5D"
+			tasks: [{
+				id: "68AD3DBDD019926C"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier4"
+			}]
+			rewards: [{
+				id: "7AD600D4B5E78DCC"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Лесоруб"
+			x: 4.5d
+			y: 1.5d
+			dependencies: ["4BDBCFB3A2B6A15E"]
+			id: "0DB5B1E6E967F9DB"
+			tasks: [{
+				id: "572E549F13B2E0AC"
+				type: "item"
+				item: {
+					id: "occultism:book_of_calling_foliot_lumberjack"
+					Count: 1b
+					tag: {
+						spiritName: "Mrokcresmed"
+					}
+				}
+			}]
+			rewards: [{
+				id: "23CB8548E87BABC8"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Транспортёр"
+			x: 3.5d
+			y: 3.0d
+			dependencies: ["0DB5B1E6E967F9DB"]
+			id: "03915D4294D95914"
+			tasks: [{
+				id: "39AD700AAB3A6D06"
+				type: "item"
+				item: {
+					id: "occultism:book_of_calling_foliot_transport_items"
+					Count: 1b
+					tag: {
+						spiritName: "Zorkairmur"
+					}
+				}
+			}]
+			rewards: [{
+				id: "4FE357E71C757E6B"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Пф, Уборщик"
+			x: 5.5d
+			y: 3.0d
+			dependencies: ["03915D4294D95914"]
+			id: "0F45E5E064E50D93"
+			tasks: [{
+				id: "3511D03B6B9450B6"
+				type: "item"
+				item: {
+					id: "occultism:book_of_calling_foliot_cleaner"
+					Count: 1b
+					tag: {
+						spiritName: "Azurarkark"
+					}
+				}
+			}]
+			rewards: [{
+				id: "073393D70CBB2EC1"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Оператор механизмов"
+			x: 7.0d
+			y: 2.5d
+			dependencies: ["0357B3CA57AF5582"]
+			id: "3FD8DE60D3C34D32"
+			tasks: [{
+				id: "5D869EC4EAE2E4B9"
+				type: "item"
+				item: {
+					id: "occultism:book_of_calling_djinni_manage_machine"
+					Count: 1b
+					tag: {
+						spiritName: "Jarloriure"
+					}
+				}
+			}]
+			rewards: [{
+				id: "4EAEE3062D5A87CB"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+	]
+}

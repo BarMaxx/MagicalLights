@@ -1,0 +1,1665 @@
+{
+	id: "5D75976FEA88902B"
+	group: ""
+	order_index: 0
+	filename: "5D75976FEA88902B"
+	title: "Начало."
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -11.5d
+			y: 0.5d
+			shape: "gear"
+			description: ["Приветствую вас на сборке - MagicalLights. На этой сборке вы будете заниматься различными видами магии. Ваш главный мод - Psi. С ним начинается ваше путешествие в этом мире, и с ним же заканчивается. Желаю вам удачи и... надеюсь вам понравится."]
+			id: "71D1DFD544A49BD9"
+			tasks: [{
+				id: "2F1038BEC3072F8B"
+				type: "checkmark"
+				title: "Начало интереснейшей сборки"
+			}]
+			rewards: [
+				{
+					id: "6DF18C13E3627E8B"
+					type: "item"
+					item: "minecraft:cake"
+				}
+				{
+					id: "673056218A39C074"
+					type: "item"
+					item: "antiqueatlas:empty_antique_atlas"
+				}
+			]
+		}
+		{
+			title: "Просто верстак, просто..."
+			x: -9.5d
+			y: 0.5d
+			description: ["Верстак из которого не выпадают предметы, ура!"]
+			dependencies: ["71D1DFD544A49BD9"]
+			hide: false
+			dependency_requirement: "one_completed"
+			id: "1F17E622A8A4FA18"
+			tasks: [
+				{
+					id: "159523C64367751E"
+					type: "item"
+					item: {
+						id: "minecraft:stone_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2511CF4887CEB897"
+					type: "item"
+					item: "craftingstation:crafting_station"
+				}
+			]
+			rewards: [{
+				id: "40BF06AA621BD62B"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Самая обычная печка"
+			x: -6.5d
+			y: 0.5d
+			description: ["Просто печь и немного угля."]
+			dependencies: ["1F17E622A8A4FA18"]
+			id: "4E00314F6119C2D5"
+			tasks: [{
+				id: "4DC63B9E31AC398A"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+			rewards: [
+				{
+					id: "60B85E1AECE59E59"
+					type: "item"
+					item: "minecraft:charcoal"
+					count: 3
+				}
+				{
+					id: "6B0CC0344A82ACD2"
+					type: "item"
+					item: "minecraft:coal"
+					count: 3
+				}
+			]
+		}
+		{
+			title: "Железные инструменты"
+			x: -4.5d
+			y: 0.5d
+			description: ["Настало время железной эры!"]
+			dependencies: ["4E00314F6119C2D5"]
+			id: "4806A7D293A9531B"
+			tasks: [
+				{
+					id: "1B858A52EBA00D7F"
+					type: "item"
+					item: {
+						id: "minecraft:iron_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "24378CF08A577E16"
+					type: "item"
+					item: {
+						id: "minecraft:iron_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "491182771EEF28F1"
+					type: "item"
+					item: {
+						id: "minecraft:iron_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "1960AA47D68361C3"
+				type: "item"
+				item: "farmersdelight:melon_popsicle"
+				count: 2
+			}]
+		}
+		{
+			title: "Для фермы"
+			x: -8.5d
+			y: -0.5d
+			dependencies: ["1F17E622A8A4FA18"]
+			id: "01986C19FCC5498D"
+			tasks: [
+				{
+					id: "5E3245ED7F0814FE"
+					type: "item"
+					item: {
+						id: "minecraft:iron_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0F8848CB0753A9EA"
+					type: "item"
+					item: "minecraft:wheat_seeds"
+					count: 10L
+				}
+			]
+			rewards: [
+				{
+					id: "7F9A71A71803194B"
+					type: "item"
+					item: "minecraft:potato"
+				}
+				{
+					id: "420A4BC7552666FE"
+					type: "item"
+					item: "minecraft:carrot"
+				}
+				{
+					id: "59D3DB991B35EDFC"
+					type: "item"
+					item: "minecraft:beetroot_seeds"
+				}
+			]
+		}
+		{
+			title: "Начало крутого мода на еду!"
+			x: -8.5d
+			y: -2.5d
+			dependencies: ["01986C19FCC5498D"]
+			id: "22EB6AA65D4E2C11"
+			tasks: [
+				{
+					id: "7E3E103D17C56F28"
+					type: "item"
+					item: "minecraft:wheat"
+					count: 18L
+				}
+				{
+					id: "02468723344C09E7"
+					type: "item"
+					item: {
+						id: "farmersdelight:iron_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "07DE9CD3C2217D63"
+					type: "item"
+					item: "farmersdelight:cutting_board"
+				}
+			]
+		}
+		{
+			title: "Новая удочка"
+			x: -11.5d
+			y: -3.5d
+			dependencies: ["01FD7A062DCE55DE"]
+			id: "670DEDBF8FD24D70"
+			tasks: [
+				{
+					id: "6AD1DA7A925FE20F"
+					type: "item"
+					item: {
+						id: "aquaculture:iron_fishing_rod"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "32FA8C5B1156A405"
+					type: "item"
+					item: "aquaculture:iron_hook"
+				}
+			]
+			rewards: [{
+				id: "3DB49E18D2F2D101"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "С него всё начинается..."
+			x: -1.5d
+			y: 0.5d
+			description: ["Это главная вещь в этой сборке, чтобы понять как она работает - перейдите в главу \"Psi\""]
+			dependencies: ["4806A7D293A9531B"]
+			id: "2709995071D18A11"
+			tasks: [{
+				id: "3B112D376D121A46"
+				type: "item"
+				item: "psi:cad_assembly_iron"
+			}]
+			rewards: [{
+				id: "520E55AC95B8E776"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "psi:encyclopaedia_psionica"
+					}
+				}
+			}]
+		}
+		{
+			title: "Пора в Незер!"
+			x: -4.5d
+			y: 3.0d
+			dependencies: ["4806A7D293A9531B"]
+			id: "5FC33B89AA1A5B6F"
+			tasks: [
+				{
+					id: "7953E51F1D7093C7"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4113D5E0F94578DC"
+					type: "item"
+					item: "minecraft:obsidian"
+					count: 10L
+				}
+				{
+					id: "1C80637B24EA15A0"
+					type: "dimension"
+					dimension: "minecraft:the_nether"
+				}
+			]
+			rewards: [{
+				id: "1D13FC2F391E1572"
+				type: "item"
+				item: "supplementaries:soul_jar"
+			}]
+		}
+		{
+			title: "Придётся покапаться"
+			x: -4.5d
+			y: 4.5d
+			dependencies: ["5FC33B89AA1A5B6F"]
+			id: "73C22E35FF742E5E"
+			tasks: [{
+				id: "61237CC828D28464"
+				type: "item"
+				item: "minecraft:netherite_scrap"
+				count: 2L
+			}]
+			rewards: [{
+				id: "7916A393DB024D9F"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Просто всем знакомый босс"
+			x: -6.0d
+			y: 3.0d
+			dependencies: ["5FC33B89AA1A5B6F"]
+			id: "2B89A8925834CA3A"
+			tasks: [{
+				id: "6BAF982CD3C5D34A"
+				type: "kill"
+				entity: "minecraft:wither"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "787597F1D3E8B1BB"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "goblintraders:extended_fire_resistance"
+						}
+					}
+				}
+				{
+					id: "781212540DCAFA7E"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			title: "Маяк!"
+			x: -6.0d
+			y: 5.5d
+			dependencies: [
+				"73C22E35FF742E5E"
+				"2B89A8925834CA3A"
+			]
+			id: "0E638F7737ADE193"
+			tasks: [{
+				id: "23890A99FEB89855"
+				type: "item"
+				item: "minecraft:beacon"
+			}]
+			rewards: [{
+				id: "793FAA89F857A149"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			title: "Больше места"
+			x: -6.0d
+			y: -1.5d
+			dependencies: ["4E00314F6119C2D5"]
+			id: "11DE7DEFD3792F54"
+			tasks: [{
+				id: "55CAFE1D9208A42F"
+				type: "item"
+				item: "ironchest:iron_chest"
+			}]
+			rewards: [{
+				id: "04BB5B4C2E4ED96C"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Камни телепортации???"
+			x: -6.5d
+			y: -3.5d
+			dependencies: ["11DE7DEFD3792F54"]
+			id: "1DC80FCC09C4BCF4"
+			tasks: [
+				{
+					id: "6B3286CD04950DBD"
+					type: "item"
+					item: "waystones:waystone"
+					count: 3L
+				}
+				{
+					id: "003FFA1D004D255D"
+					type: "item"
+					item: {
+						id: "naturescompass:naturescompass"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [{
+				id: "4A18B66A3603E57F"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Это точно пригодиться"
+			x: -11.0d
+			y: 2.0d
+			dependencies: ["1F17E622A8A4FA18"]
+			id: "3B567F9077867083"
+			tasks: [
+				{
+					id: "03242EB37D9AA958"
+					type: "item"
+					item: "minecraft:blast_furnace"
+				}
+				{
+					id: "410BD9045F67008E"
+					type: "item"
+					item: "minecraft:stonecutter"
+				}
+			]
+			rewards: [{
+				id: "336291058148F689"
+				type: "item"
+				item: "farmersdelight:smoked_ham"
+				count: 2
+			}]
+		}
+		{
+			title: "Это точно пригодиться"
+			x: -9.5d
+			y: 2.0d
+			dependencies: ["1F17E622A8A4FA18"]
+			id: "4C91B833726AF190"
+			tasks: [
+				{
+					id: "2A96B6EDA9298A57"
+					type: "item"
+					item: "minecraft:smoker"
+				}
+				{
+					id: "631377C870F377E6"
+					type: "item"
+					item: "minecraft:campfire"
+				}
+				{
+					id: "0091C31E01E730CA"
+					type: "item"
+					item: "minecraft:barrel"
+				}
+			]
+			rewards: [{
+				id: "5FCB8F226EBED99A"
+				type: "item"
+				item: "farmersdelight:mutton_wrap"
+				count: 3
+			}]
+		}
+		{
+			title: "Клетку лучше мыть"
+			x: -8.5d
+			y: -4.5d
+			dependencies: ["22EB6AA65D4E2C11"]
+			dependency_requirement: "one_completed"
+			id: "55F9D96CCCE7B46D"
+			tasks: [
+				{
+					id: "30FEC4BAC68127AC"
+					type: "item"
+					item: "rats:rat_cage"
+				}
+				{
+					id: "0B316D9F10A782E9"
+					type: "item"
+					item: "rats:cheese"
+					count: 10L
+				}
+				{
+					id: "6EDA10A6A0ED58EF"
+					type: "item"
+					item: "rats:cheese_stick"
+				}
+			]
+			rewards: [{
+				id: "62F0CD280015E8BD"
+				type: "item"
+				item: "rats:blue_cheese"
+				count: 4
+			}]
+		}
+		{
+			title: "Энд - жди!"
+			x: -3.0d
+			y: -2.0d
+			dependencies: ["4BBF63EBFBE30354"]
+			id: "7E5D0629A4064D8B"
+			tasks: [{
+				id: "43179C760505DD3E"
+				type: "item"
+				item: "minecraft:ender_eye"
+				count: 16L
+			}]
+		}
+		{
+			title: "Это было просто, наверное..."
+			x: -2.5d
+			y: -4.0d
+			dependencies: ["7E5D0629A4064D8B"]
+			id: "4DE95FA69663E2F1"
+			tasks: [{
+				id: "32D31FCF44CF12D0"
+				type: "kill"
+				entity: "minecraft:ender_dragon"
+				value: 1L
+			}]
+			rewards: [{
+				id: "4A0203EF3117E11C"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			title: "Тоже полезная вещь"
+			x: 0.5d
+			y: 0.5d
+			dependencies: ["2709995071D18A11"]
+			id: "7C4F8CC06642CB1D"
+			tasks: [{
+				id: "16709A17F6AB3685"
+				type: "item"
+				item: "mahoutsukai:mortar_and_pestle"
+			}]
+			rewards: [{
+				id: "578532F233BA2F32"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			title: "Просто навигатор"
+			x: -2.5d
+			y: -5.5d
+			dependencies: ["4DE95FA69663E2F1"]
+			id: "499A7F3AB0645873"
+			tasks: [
+				{
+					id: "6B0D81D4975D57BD"
+					type: "item"
+					item: "endreborn:purpur_eye"
+				}
+				{
+					id: "2DB44F802F0A84C5"
+					type: "item"
+					item: "endreborn:tungsten_ingot"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "5CEE6C7A31E9821F"
+				type: "item"
+			}]
+		}
+		{
+			title: "Босс жди"
+			x: -10.5d
+			y: -7.0d
+			dependencies: ["4565F580094C3091"]
+			id: "4EC1915775FC4612"
+			tasks: [
+				{
+					id: "451E157ADE0D8419"
+					type: "item"
+					item: "rats:plague_tome"
+				}
+				{
+					id: "5F411F8A62F70000"
+					type: "kill"
+					entity: "rats:black_death"
+					value: 1L
+				}
+			]
+			rewards: [{
+				id: "6743AA2BAEF13F75"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Прикольные вещи"
+			x: -10.5d
+			y: -8.5d
+			dependencies: ["4EC1915775FC4612"]
+			id: "70DA1C59019C98F2"
+			tasks: [
+				{
+					id: "2272CD2A862A3E34"
+					type: "item"
+					item: {
+						id: "rats:plague_scythe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5CAF213EA1014C66"
+					type: "item"
+					item: "rats:purifying_liquid"
+				}
+			]
+			rewards: [{
+				id: "606C4324D5591BD3"
+				type: "xp_levels"
+				xp_levels: 7
+			}]
+		}
+		{
+			title: "Просто улучшения"
+			x: -8.5d
+			y: -6.5d
+			dependencies: ["55F9D96CCCE7B46D"]
+			id: "4565F580094C3091"
+			tasks: [
+				{
+					id: "1BCE12811B517B39"
+					type: "item"
+					item: "rats:rat_upgrade_basic"
+					count: 8L
+				}
+				{
+					id: "77E0F407C365C74F"
+					type: "item"
+					item: "rats:rat_upgrade_warrior"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "36FCA948030F8136"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Дракон?"
+			x: -6.5d
+			y: -7.0d
+			dependencies: ["4565F580094C3091"]
+			id: "0DE49CB7F6BF4BC8"
+			tasks: [{
+				id: "357A0031009F0924"
+				type: "item"
+				item: "rats:rat_upgrade_dragon"
+			}]
+			rewards: [{
+				id: "6F164CB2D24F4CE9"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Крыса сильнее меня..."
+			x: -6.5d
+			y: -8.5d
+			dependencies: ["0DE49CB7F6BF4BC8"]
+			id: "4F47C018BB1EA3E5"
+			tasks: [{
+				id: "0C818BC17C0FD462"
+				type: "item"
+				item: "rats:rat_upgrade_god"
+			}]
+			rewards: [{
+				id: "6A138B2520F4A14C"
+				type: "xp_levels"
+				xp_levels: 25
+			}]
+		}
+		{
+			title: "..."
+			x: -13.0d
+			y: -3.5d
+			dependencies: ["670DEDBF8FD24D70"]
+			id: "5A6CB19CB3ABDEE5"
+			tasks: [
+				{
+					id: "7356267BA2280FFE"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_fishing_rod"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "107D990B4C4B5763"
+					type: "item"
+					item: "aquaculture:nether_star_hook"
+				}
+			]
+			rewards: [{
+				id: "2C244BFDA68DB4E8"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			title: "Помощник по моду - Machou Tsukai"
+			x: 2.0d
+			y: 1.5d
+			dependencies: ["7C4F8CC06642CB1D"]
+			id: "2B7CB90996AF0635"
+			tasks: [{
+				id: "626653056DB5AF79"
+				type: "item"
+				item: "mahoutsukai:guidebook"
+			}]
+			rewards: [
+				{
+					id: "74D8EFBC397357EE"
+					type: "item"
+					item: "supplementaries:globe"
+				}
+				{
+					id: "2C09434F6B1AD717"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+		}
+		{
+			title: "Переносной сундук"
+			x: -4.5d
+			y: -2.0d
+			dependencies: [
+				"11DE7DEFD3792F54"
+				"7E5D0629A4064D8B"
+			]
+			id: "5375D13985073483"
+			tasks: [{
+				id: "44EAD096C1A7FB5F"
+				type: "item"
+				item: {
+					id: "endreborn:ender_transmitter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "69D9D54205117238"
+				type: "item"
+				item: {
+					id: "endreborn:ender_transmitter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Пригодиться чтобы попасть в Энд"
+			x: -3.0d
+			y: -0.5d
+			dependencies: ["4806A7D293A9531B"]
+			id: "4BBF63EBFBE30354"
+			tasks: [
+				{
+					id: "15F36EAB7CADCDCF"
+					type: "item"
+					item: {
+						id: "endreborn:iron_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "774F00A0C9DC3443"
+					type: "item"
+					item: "endreborn:endorium_nugget"
+					count: 32L
+				}
+			]
+			rewards: [{
+				id: "112D4D698E45AA25"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			title: "Крыса готовит лучше меня..."
+			x: -10.0d
+			y: -5.0d
+			dependencies: ["55F9D96CCCE7B46D"]
+			id: "130B6C2C128B4B0A"
+			tasks: [{
+				id: "601FDC86FF0ACA8F"
+				type: "item"
+				item: "rats:rat_upgrade_chef"
+			}]
+			rewards: [{
+				id: "57A2424A8AD07CE8"
+				type: "xp_levels"
+				xp_levels: 7
+			}]
+		}
+		{
+			title: "Это ОЧЕНЬ вкусно!"
+			x: -11.5d
+			y: -5.0d
+			dependencies: ["130B6C2C128B4B0A"]
+			id: "37C6BDB98525D758"
+			tasks: [
+				{
+					id: "322CA5F74EBE294F"
+					type: "item"
+					item: "rats:confit_byaldi"
+					count: 10L
+				}
+				{
+					id: "1824656E41B476A9"
+					type: "item"
+					item: "rats:potato_kinishes"
+					count: 10L
+				}
+			]
+			rewards: [{
+				id: "6BC80F60DDA94941"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+		}
+		{
+			title: "Пригодится"
+			x: -3.0d
+			y: 4.5d
+			dependencies: ["73C22E35FF742E5E"]
+			id: "77908B5542D82D6F"
+			tasks: [{
+				id: "5C0736A0CE0336DF"
+				type: "item"
+				item: "minecraft:smithing_table"
+			}]
+			rewards: [{
+				id: "5B9B26612AFA4862"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Незеритовые инструменты"
+			x: -2.0d
+			y: 5.5d
+			dependencies: ["77908B5542D82D6F"]
+			id: "5EAAD005A338DBB5"
+			tasks: [
+				{
+					id: "00B75E826F4EE391"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1C574B4690A0BB27"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "35D5A9947622EE26"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "142FB911A1814724"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Неплохая броня"
+			x: -2.0d
+			y: 7.0d
+			dependencies: ["5EAAD005A338DBB5"]
+			id: "054D069A963CCA29"
+			tasks: [
+				{
+					id: "017BC2E8D69085CF"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "32A1E775ADC373A9"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7424285BD47468B5"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "124CF32F05440C02"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0B85B800C0752269"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Неплохое улучшение"
+			x: -7.0d
+			y: -5.0d
+			dependencies: ["55F9D96CCCE7B46D"]
+			id: "19DA4D179D101554"
+			tasks: [{
+				id: "694EDCEBA58592D7"
+				type: "item"
+				item: "rats:rat_upgrade_damage_protection"
+			}]
+			rewards: [{
+				id: "4C14CF275003DFEC"
+				type: "xp_levels"
+				xp_levels: 7
+			}]
+		}
+		{
+			title: "Иногда нужно перекусить"
+			x: 3.5d
+			y: 4.0d
+			dependencies: ["77769E0B4DBF2CB1"]
+			id: "1C2D2CC1F248301C"
+			tasks: [{
+				id: "4EC7E4DE7FE98915"
+				type: "item"
+				item: "mahoutsukai:faecake"
+			}]
+		}
+		{
+			title: "Очень острый"
+			x: 2.0d
+			y: 3.0d
+			dependencies: ["2B7CB90996AF0635"]
+			id: "06E576C2492001C1"
+			tasks: [{
+				id: "34BE84CAC854FF29"
+				type: "item"
+				item: "mahoutsukai:dagger"
+			}]
+		}
+		{
+			title: "Лучше сделайте их по-больше"
+			x: 2.0d
+			y: 4.5d
+			dependencies: ["06E576C2492001C1"]
+			id: "77769E0B4DBF2CB1"
+			tasks: [{
+				id: "39949C623C425E1D"
+				type: "item"
+				item: "mahoutsukai:fae_essence"
+				count: 10L
+			}]
+			rewards: [{
+				id: "6DAEDBFB8DB2EF6F"
+				type: "item"
+				item: "minecraft:honey_bottle"
+				count: 3
+			}]
+		}
+		{
+			title: "Пригодится"
+			x: 0.5d
+			y: 3.5d
+			dependencies: ["06E576C2492001C1"]
+			id: "63A260C2C79BACBE"
+			tasks: [{
+				id: "10697192E4575075"
+				type: "item"
+				item: {
+					id: "mahoutsukai:attuned_diamond"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							MAHOUTSUKAI_GEM_STORED_MANA: 0
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Достаточно сильное оружие"
+			x: 2.0d
+			y: 7.5d
+			dependencies: ["77769E0B4DBF2CB1"]
+			id: "73321366254C6B3E"
+			tasks: [{
+				id: "676D2FF2BB682C66"
+				type: "item"
+				item: {
+					id: "mahoutsukai:clarent"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						Parent: {
+							MAHOUTSUKAI_ATTACK_CAP: 10000.0d
+							MAHOUTSUKAI_ATTACK_DAMAGE: 3.0f
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "58C392EC13B56AEB"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Зачем???"
+			x: 4.0d
+			y: 8.0d
+			dependencies: ["73321366254C6B3E"]
+			id: "7927F2E4FB8C4C40"
+			tasks: [{
+				id: "5072852D71E0D746"
+				type: "item"
+				item: {
+					id: "mahoutsukai:weapon_projectile_bow"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "056A541347576B50"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			title: "Святой меч"
+			x: 0.0d
+			y: 8.0d
+			dependencies: ["73321366254C6B3E"]
+			id: "2D6694090C12738A"
+			tasks: [{
+				id: "38559129CF28180A"
+				type: "item"
+				item: {
+					id: "mahoutsukai:caliburn"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						Parent: {
+							MAHOUTSUKAI_ATTACK_CAP: 10000.0d
+							MAHOUTSUKAI_ATTACK_DAMAGE: 3.0f
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "3406196CC7DB3333"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Очень сильный!"
+			x: 0.0d
+			y: 10.0d
+			dependencies: ["2D6694090C12738A"]
+			id: "017E6FF87CE0B116"
+			tasks: [{
+				id: "156700A1300C7EF5"
+				type: "item"
+				item: {
+					id: "mahoutsukai:morgan"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						Parent: {
+							MAHOUTSUKAI_ATTACK_CAP: 10000.0d
+							MAHOUTSUKAI_ATTACK_DAMAGE: 3.0f
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "0F9668CAC686183A"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+		}
+		{
+			x: 2.0d
+			y: 6.0d
+			dependencies: ["77769E0B4DBF2CB1"]
+			id: "25EB89E963DB4BFD"
+			tasks: [{
+				id: "5F18649DB87C2B80"
+				type: "item"
+				item: "mahoutsukai:mahoujin_projector"
+			}]
+			rewards: [{
+				id: "0B96CDE9115FFCC0"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Мы точно в Майнкрафте?"
+			x: -10.0d
+			y: -2.0d
+			dependencies: ["22EB6AA65D4E2C11"]
+			id: "557525314A74994B"
+			tasks: [
+				{
+					id: "11327C597DDA2AAE"
+					type: "item"
+					item: "farmersdelight:stove"
+				}
+				{
+					id: "190228051DF2A261"
+					type: "item"
+					item: "farmersdelight:cooking_pot"
+				}
+				{
+					id: "56AE04B057168AF3"
+					type: "item"
+					item: {
+						id: "farmersdelight:skillet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0B9FE2F67D6CCCA9"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+		}
+		{
+			title: "Вкусно?"
+			x: -13.0d
+			y: -2.0d
+			dependencies: ["3BF2D8E8E7DFEB13"]
+			id: "7EB749BD230CCF95"
+			tasks: [
+				{
+					id: "3FF623325BE39ADF"
+					type: "item"
+					item: "farmersdelight:shepherds_pie_block"
+				}
+				{
+					id: "0BBF1E4E98BCE6DC"
+					type: "item"
+					item: "farmersdelight:baked_cod_stew"
+					count: 10L
+				}
+				{
+					id: "5D4049AEB5C8F2DB"
+					type: "item"
+					item: "farmersdelight:honey_cookie"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "0E8DCD6FDC668640"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+		}
+		{
+			title: "Посох строительства"
+			x: -7.5d
+			y: 1.5d
+			dependencies: ["4E00314F6119C2D5"]
+			id: "5ABDB4C0F667B018"
+			tasks: [{
+				id: "4AE09FF6E150A2D9"
+				type: "item"
+				item: {
+					id: "constructionwand:iron_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "2EE30AB5DF8533BC"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Филе рыбки"
+			x: -10.0d
+			y: -3.5d
+			dependencies: ["22EB6AA65D4E2C11"]
+			id: "01FD7A062DCE55DE"
+			tasks: [
+				{
+					id: "5E0E2C7FB3C6D069"
+					type: "item"
+					item: {
+						id: "aquaculture:iron_fillet_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "604EDA07707BEC9E"
+					type: "item"
+					item: "aquaculture:fish_fillet_cooked"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "6DD5AC7B17BA3EED"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Очень вкусные напитки"
+			x: -11.5d
+			y: -2.0d
+			dependencies: ["557525314A74994B"]
+			id: "3BF2D8E8E7DFEB13"
+			tasks: [
+				{
+					id: "313936AECF76D4E0"
+					type: "item"
+					item: "farmersdelight:milk_bottle"
+				}
+				{
+					id: "58AD7400BD752698"
+					type: "item"
+					item: "farmersdelight:hot_cocoa"
+				}
+				{
+					id: "12F90702F5C7AD42"
+					type: "item"
+					item: "farmersdelight:apple_cider"
+				}
+				{
+					id: "2B38CC996DD7327D"
+					type: "item"
+					item: "farmersdelight:melon_juice"
+				}
+			]
+			rewards: [{
+				id: "1FB343C14D8039F2"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			title: "Бесконечный посох"
+			x: -7.5d
+			y: 3.0d
+			dependencies: ["5ABDB4C0F667B018"]
+			id: "687C4887B76B4F3C"
+			tasks: [{
+				id: "23E6228FE7EE2C45"
+				type: "item"
+				item: {
+					id: "constructionwand:infinity_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "0BD6938086B4AE16"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+		}
+		{
+			title: "Чтобы не заболеть"
+			x: -12.0d
+			y: -7.0d
+			dependencies: ["4EC1915775FC4612"]
+			id: "43785FB22CAE47DF"
+			tasks: [
+				{
+					id: "207D842A5E374ADC"
+					type: "item"
+					item: {
+						id: "rats:plague_doctor_mask"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3789546A19CF5D00"
+					type: "item"
+					item: {
+						id: "rats:black_death_mask"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4CB491672BD3CA90"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			title: "..."
+			x: -6.0d
+			y: 7.0d
+			description: ["Лучше не начинай собирать незерит. Все равно не найдёшь столько... Но если нашел - поздравляю, у тебя есть полный Маяк, только зачем..."]
+			dependencies: ["0E638F7737ADE193"]
+			id: "03ED3C66422262DB"
+			tasks: [{
+				id: "7607A428B1441398"
+				type: "item"
+				item: "minecraft:netherite_block"
+				count: 164L
+			}]
+			rewards: [
+				{
+					id: "0880CCF093A24CBC"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					id: "7A20D62A80C44FA8"
+					type: "item"
+					item: "minecraft:nether_star"
+				}
+				{
+					id: "0D4C86DB2E4E4F95"
+					type: "item"
+					item: "mysticalagriculture:netherite_seeds"
+				}
+			]
+		}
+		{
+			title: "Инструмент по взлому"
+			x: -1.5d
+			y: -1.0d
+			dependencies: ["4BBF63EBFBE30354"]
+			id: "0A4866B7F1E77583"
+			tasks: [{
+				id: "165BA4061D9EEC98"
+				type: "item"
+				item: "treasure2:treasure_tool"
+			}]
+			rewards: [{
+				id: "388DCFFC1B39444C"
+				type: "item"
+				item: "treasure2:spider_chest"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["0A4866B7F1E77583"]
+			id: "69C01BD2995B0A8D"
+			tasks: [{
+				id: "669E30278B74BC81"
+				type: "item"
+				item: {
+					id: "treasure2:wood_key"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						Parent: {
+							durability: 20
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["0A4866B7F1E77583"]
+			id: "2724F4B1BE871051"
+			tasks: [{
+				id: "2FB94B47BD42E811"
+				type: "item"
+				item: {
+					id: "treasure2:stone_key"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						Parent: {
+							durability: 10
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["0A4866B7F1E77583"]
+			id: "17E5DFF79B987313"
+			tasks: [{
+				id: "0C1AA32C402439C6"
+				type: "item"
+				item: {
+					id: "treasure2:iron_key"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						Parent: {
+							durability: 10
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["0A4866B7F1E77583"]
+			id: "18F7D31DE25E2F4A"
+			tasks: [{
+				id: "7CB0A0448F481A07"
+				type: "item"
+				item: {
+					id: "treasure2:gold_key"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						Parent: {
+							durability: 15
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["0A4866B7F1E77583"]
+			id: "4696B00CFE6A227F"
+			tasks: [{
+				id: "524A33875E87C177"
+				type: "item"
+				item: {
+					id: "treasure2:diamond_key"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						Parent: {
+							durability: 20
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["0A4866B7F1E77583"]
+			id: "08990BD4B97384EF"
+			tasks: [{
+				id: "763ADC3E2E80C461"
+				type: "item"
+				item: {
+					id: "treasure2:emerald_key"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						Parent: {
+							durability: 10
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -8.5d
+			y: -9.5d
+			description: ["Можно купить только у чумного жителя"]
+			dependencies: ["62245E9DF4CC43D0"]
+			id: "3B8DB5503FA71298"
+			tasks: [{
+				id: "2366FE6A429D1D10"
+				type: "item"
+				item: "rats:upgrade_combiner"
+			}]
+			rewards: [{
+				id: "703F1D3BC5478C3C"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+		}
+		{
+			x: -8.5d
+			y: -8.0d
+			description: ["Можно купить только у чумного жителя"]
+			dependencies: ["4565F580094C3091"]
+			id: "62245E9DF4CC43D0"
+			tasks: [{
+				id: "0DA54C4D3759F26D"
+				type: "item"
+				item: "rats:upgrade_separator"
+			}]
+			rewards: [{
+				id: "69B5CCAEA4F6BC95"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+		}
+		{
+			title: "Ещё больше места"
+			x: -7.5d
+			y: -1.5d
+			dependencies: ["11DE7DEFD3792F54"]
+			id: "34551DC046E1BDD1"
+			tasks: [{
+				id: "3692DD141A6663C7"
+				type: "item"
+				item: "ironchest:gold_chest"
+			}]
+			rewards: [{
+				id: "5B9BB3C925F0AC9D"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "Очень много места"
+			x: -4.5d
+			y: -3.5d
+			dependencies: ["5375D13985073483"]
+			id: "6D643495F1C85CAE"
+			tasks: [
+				{
+					id: "206716E9061556F9"
+					type: "item"
+					item: "ironchest:diamond_chest"
+				}
+				{
+					id: "5C4D584F4E969F6B"
+					type: "item"
+					item: "ironchest:crystal_chest"
+				}
+				{
+					id: "4BCDF295177410BF"
+					type: "item"
+					item: "ironchest:obsidian_chest"
+				}
+			]
+			rewards: [{
+				id: "0CE3D8016D768DEA"
+				type: "xp_levels"
+				xp_levels: 7
+			}]
+		}
+	]
+}
