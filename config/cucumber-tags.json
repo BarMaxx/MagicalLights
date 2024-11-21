@@ -23,7 +23,7 @@
   "forge:gems/ruby": "null",
   "forge:ingots/platinum": "null",
   "forge:dusts/niter": "null",
-  "forge:dusts/sulfur": "eidolon:sulfur",
+  "forge:dusts/sulfur": "bloodmagic:sulfur",
   "forge:ingots/lead": "eidolon:lead_ingot",
   "forge:ingots/graphite": "null",
   "forge:ingots/chrome": "null",

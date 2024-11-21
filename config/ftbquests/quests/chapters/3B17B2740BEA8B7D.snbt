@@ -4,6 +4,7 @@
 	order_index: 5
 	filename: "3B17B2740BEA8B7D"
 	title: "Магия Крови"
+	icon: "bloodmagic:altar"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [

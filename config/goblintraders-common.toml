@@ -23,6 +23,9 @@
 		#The chance out of one hundred that the trader will spawn in the over world
 		#Range: 1 ~ 100
 		traderSpawnChance = 25
+		#Goblins will make a grunt noise while walking around. If you find it happening too often, you can increase the interval. Value is represented in ticks.
+		#Range: 1 ~ 1000
+		gruntNoiseInterval = 80
 
 	#Goblin Trader settings
 	[common.goblin_trader]
@@ -31,7 +34,7 @@
 		traderMinSpawnLevel = 0
 		#The maximum level the trader can spawn
 		#Range: 0 ~ 256
-		traderMaxSpawnLevel = 64
+		traderMaxSpawnLevel = 63
 		#If true, the goblin will try to hit back a player or mob that hit them first
 		canAttackBack = true
 		#The amount of ticks before the trader will replenish it's trades. Set to -1 to disable restocking
@@ -43,4 +46,7 @@
 		#The chance out of one hundred that the trader will spawn in the over world
 		#Range: 1 ~ 100
 		traderSpawnChance = 25
+		#Goblins will make a grunt noise while walking around. If you find it happening too often, you can increase the interval. Value is represented in ticks.
+		#Range: 1 ~ 1000
+		gruntNoiseInterval = 80
 

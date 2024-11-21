@@ -47,6 +47,7 @@
 		iron_gate = true
 		bamboo_spikes_tipped = true
 		netherite_trapdoor = true
+		wrench = true
 		fodder = true
 		end_stone_lamp = true
 		globe = true

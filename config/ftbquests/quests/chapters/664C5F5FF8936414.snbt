@@ -4,6 +4,7 @@
 	order_index: 3
 	filename: "664C5F5FF8936414"
 	title: "Окультная Магия"
+	icon: "occultism:datura"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [

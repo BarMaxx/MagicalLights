@@ -3,7 +3,8 @@
 	group: ""
 	order_index: 0
 	filename: "5D75976FEA88902B"
-	title: "Начало."
+	title: "Начало"
+	icon: "craftingstation:crafting_station"
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
 	quests: [
@@ -560,19 +561,12 @@
 			y: -5.5d
 			dependencies: ["4DE95FA69663E2F1"]
 			id: "499A7F3AB0645873"
-			tasks: [
-				{
-					id: "6B0D81D4975D57BD"
-					type: "item"
-					item: "endreborn:purpur_eye"
-				}
-				{
-					id: "2DB44F802F0A84C5"
-					type: "item"
-					item: "endreborn:tungsten_ingot"
-					count: 8L
-				}
-			]
+			tasks: [{
+				id: "2DB44F802F0A84C5"
+				type: "item"
+				item: "endreborn:tungsten_ingot"
+				count: 8L
+			}]
 			rewards: [{
 				id: "5CEE6C7A31E9821F"
 				type: "item"
